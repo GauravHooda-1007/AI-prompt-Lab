@@ -1,8 +1,12 @@
 # Prompt Optimization Laboratory 🧪
 
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/deploy)
+
 The **Prompt Optimization Laboratory** is a comprehensive, automated, research-grade benchmarking system designed to scientifically evaluate the performance of different Large Language Models (LLMs) across various prompting strategies and task categories.
 
 Instead of relying on human intuition or manual testing, this system programmatically generates, evaluates, and aggregates results using a structured pipeline.
+
+> **🌐 Live Demo:** *[Link will be added after deployment]*
 
 ---
 
@@ -107,3 +111,23 @@ To execute the entire pipeline from scratch, open your terminal and run the scri
    streamlit run dashboard.py
    ```
    *(Opens the interactive web application in your browser)*
+
+
+---
+
+## ☁️ 5. Cloud Deployment (Streamlit Community Cloud)
+
+This project is deployed on [Streamlit Community Cloud](https://share.streamlit.io).
+
+To deploy your own instance:
+
+1. Fork this repository
+2. Go to [share.streamlit.io](https://share.streamlit.io) and sign in with GitHub
+3. Click **"New app"** → select this repo → set main file to `dashboard.py`
+4. In **Advanced settings → Secrets**, add:
+   ```toml
+   GROQ_API_KEY = "your_groq_api_key_here"
+   ```
+5. Click **Deploy**
+
+> **Note:** The Benchmark Results tab works with the pre-computed CSV data included in the repo. The Live Playground tab requires a valid Groq API key to make real-time API calls.

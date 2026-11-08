@@ -100,7 +100,7 @@ def render_benchmark_view():
         st.dataframe(filtered_raw, use_container_width=True)
 
     st.markdown("---")
-    st.caption("Data generated via factorial benchmarking across Groq models (Llama 3 8B and Llama 3 70B), 4 prompting strategies, 3 task categories, 5 test cases per cell (n=120).")
+    st.caption("Data generated via factorial benchmarking across Groq models, 4 prompting strategies, 3 task categories, 5 test cases per cell (n=120).")
 
 def render_playground_view():
     st.caption("This is a live demo, separate from the fixed 120-generation benchmark. Results here are not included in the research findings.")
@@ -108,6 +108,8 @@ def render_playground_view():
     task_type = st.selectbox("Task type", options=list(config.TASKS.keys()))
     strategy_type = st.selectbox("Prompt strategy", options=list(config.STRATEGIES.keys()))
     user_input = st.text_area("Enter your prompt input", height=150)
+    
+    model_keys = list(config.MODELS.keys())
     
     if st.button("Run Comparison"):
         if not user_input.strip():
@@ -119,18 +121,18 @@ def render_playground_view():
         prompt = strategy_fn(task_instruction, user_input)
         
         with st.spinner("Running both models..."):
-            llama8b_response = "ERROR"
-            llama_response = "ERROR"
+            model_a_response = "ERROR"
+            model_b_response = "ERROR"
             
             try:
-                llama8b_response = call_groq(prompt, config.MODELS["llama3-8b"]["model_id"])
+                model_a_response = call_groq(prompt, config.MODELS[model_keys[0]]["model_id"])
             except Exception as e:
-                st.error(f"Llama 3 8B failed: {e}")
+                st.error(f"{model_keys[0]} failed: {e}")
                 
             try:
-                llama_response = call_groq(prompt, config.MODELS["llama3-70b"]["model_id"])
+                model_b_response = call_groq(prompt, config.MODELS[model_keys[1]]["model_id"])
             except Exception as e:
-                st.error(f"Llama 3 failed: {e}")
+                st.error(f"{model_keys[1]} failed: {e}")
                 
         def judge_response(resp_text):
             if resp_text == "ERROR" or not resp_text:
@@ -168,8 +170,8 @@ Respond with ONLY valid JSON, no other text, no markdown fences:
                 return None
 
         with st.spinner("Judging responses..."):
-            llama8b_scores = judge_response(llama8b_response)
-            llama_scores = judge_response(llama_response)
+            model_a_scores = judge_response(model_a_response)
+            model_b_scores = judge_response(model_b_response)
             
         col1, col2 = st.columns(2)
         
@@ -183,18 +185,18 @@ Respond with ONLY valid JSON, no other text, no markdown fences:
                 st.error("Scoring failed or model errored.")
                 
         with col1:
-            display_result("Llama 3 (8B)", llama8b_response, llama8b_scores)
+            display_result(model_keys[0], model_a_response, model_a_scores)
             
         with col2:
-            display_result("Llama 3 (70B)", llama_response, llama_scores)
+            display_result(model_keys[1], model_b_response, model_b_scores)
             
-        if llama8b_scores and llama_scores:
-            if llama8b_scores['composite_score'] > llama_scores['composite_score']:
-                st.success(f"🏆 Llama 3 (8B) scored higher ({llama8b_scores['composite_score']:.2f} vs {llama_scores['composite_score']:.2f})")
-            elif llama_scores['composite_score'] > llama8b_scores['composite_score']:
-                st.success(f"🏆 Llama 3 (70B) scored higher ({llama_scores['composite_score']:.2f} vs {llama8b_scores['composite_score']:.2f})")
+        if model_a_scores and model_b_scores:
+            if model_a_scores['composite_score'] > model_b_scores['composite_score']:
+                st.success(f"🏆 {model_keys[0]} scored higher ({model_a_scores['composite_score']:.2f} vs {model_b_scores['composite_score']:.2f})")
+            elif model_b_scores['composite_score'] > model_a_scores['composite_score']:
+                st.success(f"🏆 {model_keys[1]} scored higher ({model_b_scores['composite_score']:.2f} vs {model_a_scores['composite_score']:.2f})")
             else:
-                st.info(f"🤝 Both models tied ({llama8b_scores['composite_score']:.2f})")
+                st.info(f"🤝 Both models tied ({model_a_scores['composite_score']:.2f})")
 
 tab1, tab2 = st.tabs(["Benchmark Results", "Live Playground"])
 

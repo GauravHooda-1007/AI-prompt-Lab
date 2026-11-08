@@ -24,7 +24,7 @@ def return_error(retry_state):
 )
 def call_judge_api(prompt: str) -> str:
     response = groq_client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="qwen/qwen3.8-27b",
         messages=[{"role": "user", "content": prompt}],
         temperature=0.0
     )

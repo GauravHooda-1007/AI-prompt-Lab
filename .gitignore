@@ -35,5 +35,5 @@ share/python-wheels/
 *.egg
 MANIFEST
 
-# Streamlit
-.streamlit/
+# Streamlit (track config, ignore secrets)
+.streamlit/secrets.toml

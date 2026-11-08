@@ -1,6 +1,6 @@
 MODELS = {
-    "llama3-8b": {"provider": "groq", "model_id": "llama-3.1-8b-instant"},
-    "llama3-70b": {"provider": "groq", "model_id": "llama-3.3-70b-versatile"}
+    "qwen3-27b": {"provider": "groq", "model_id": "qwen/qwen3.8-27b"},
+    "gpt-oss-120b": {"provider": "groq", "model_id": "openai/gpt-oss-120b"}
 }
 
 def zero_shot(task_instruction, input_text):
