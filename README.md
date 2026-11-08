@@ -27,9 +27,9 @@ The project is decoupled into five distinct Python modules that execute linearly
 
 The laboratory runs a "full factorial" experiment, meaning it tests every single possible combination of three different variables to ensure an apples-to-apples comparison.
 
-*   **Factor A (Models):** We test two powerful open-weights models provided by Groq:
-    *   `llama-3.1-8b-instant` (A highly efficient, smaller model)
-    *   `llama-3.3-70b-versatile` (A massive, highly capable model)
+*   **Factor A (Models):** We test two powerful models provided by Groq:
+    *   `qwen/qwen3.8-27b` (Qwen 3.8 27B — a strong mid-size reasoning model)
+    *   `openai/gpt-oss-120b` (GPT-OSS 120B — a large, highly capable model)
 *   **Factor B (Prompt Strategies):** Four distinct ways of prompting the AI:
     1.  **Zero-shot:** Direct instructions with no examples.
     2.  **Few-shot:** Instructions paired with two hardcoded examples to establish a pattern.
@@ -64,7 +64,7 @@ This script loops through all 120 combinations.
 ### `judge.py` (The Grader)
 This script handles the **LLM-as-a-Judge** evaluation methodology. No human reads the 120 responses. 
 - It reads `data/raw_responses.csv`.
-- It uses `llama-3.3-70b-versatile` as an impartial judge.
+- It uses `qwen/qwen3.8-27b` as an impartial judge.
 - It passes the original instruction, the input, and the AI's generated response to the judge, asking it to score the response from 1-5 on Accuracy, Relevance, Coherence, and Completeness.
 - The judge is strictly prompted to return its evaluation as a valid JSON object.
 - The script parses the JSON, calculates a mathematically weighted **Composite Score** using the rubric from `config.py`, and saves the final grades to `data/scored_responses.csv`.
@@ -79,7 +79,7 @@ A pure data manipulation script utilizing `pandas`.
 ### `dashboard.py` (The Presentation)
 A `streamlit` web application that provides a beautiful, interactive GUI for the project. It features a tabbed layout:
 1. **Benchmark Results Tab**: Reads the aggregated CSVs and renders interactive Plotly bar charts and DataFrames. It features sidebar filters to drill down into specific models or tasks, and includes a "Consistency Check" that highlights high-variance (inconsistent) combinations.
-2. **Live Playground Tab**: An interactive demo layer. Users can type a custom prompt, select a task and strategy, and hit "Run Comparison". The app instantly builds the prompt, queries both Llama models live, judges them live, and declares a winner side-by-side. Crucially, this live demo does *not* write to the `data/` folder, ensuring the fixed 120-generation research benchmark remains uncontaminated.
+2. **Live Playground Tab**: An interactive demo layer. Users can type a custom prompt, select a task and strategy, and hit "Run Comparison". The app instantly builds the prompt, queries both models live, judges them live, and declares a winner side-by-side. Crucially, this live demo does *not* write to the `data/` folder, ensuring the fixed 120-generation research benchmark remains uncontaminated.
 
 ### `.env` (Environment Variables)
 Stores the `GROQ_API_KEY` required to authenticate and interact with the Groq API.
