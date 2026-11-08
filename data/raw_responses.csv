@@ -1,0 +1,1628 @@
+task_category,strategy,model_name,test_case_index,input_text,prompt_used,response_text,timestamp
+classification,zero_shot,llama3-8b,0,The product arrived on time and works exactly as described. I couldn't be happier with my purchase.,"Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Input: The product arrived on time and works exactly as described. I couldn't be happier with my purchase.","The sentiment of the given text is Positive. The phrases ""I couldn't be happier"" and the overall description of the product working as expected convey a strong sense of satisfaction and happiness, indicating a positive sentiment.",2026-07-12T21:56:17.352327
+classification,zero_shot,llama3-8b,1,"I waited three weeks for this to ship, and when it finally arrived, the packaging was completely destroyed. The item inside is dented.","Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Input: I waited three weeks for this to ship, and when it finally arrived, the packaging was completely destroyed. The item inside is dented.","The sentiment of the text is Negative. The customer expresses frustration and disappointment with the shipping process, mentioning that the item took three weeks to arrive and was damaged upon delivery.",2026-07-12T21:56:18.132277
+classification,zero_shot,llama3-8b,2,"The movie was okay. It had some good action scenes, but the plot was a bit predictable. Not the best, but not the worst.","Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Input: The movie was okay. It had some good action scenes, but the plot was a bit predictable. Not the best, but not the worst.","The sentiment of the text can be classified as Neutral. 
+
+Although the text mentions some negative aspects, such as the predictable plot, it also mentions some positive aspects, like the good action scenes. The overall tone is balanced and neither overwhelmingly positive nor negative.",2026-07-12T21:56:18.813010
+classification,zero_shot,llama3-8b,3,Customer service was incredibly helpful when I called about a billing issue. They resolved it in under five minutes!,"Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Input: Customer service was incredibly helpful when I called about a billing issue. They resolved it in under five minutes!","The sentiment of the text is Positive. The customer expresses satisfaction with the service they received, using words like ""incredibly helpful"" and ""resolved it in under five minutes"", which convey a positive experience.",2026-07-12T21:56:19.598219
+classification,zero_shot,llama3-8b,4,The instruction manual is extremely difficult to understand. It took me hours to assemble what should have been a 20-minute job.,"Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Input: The instruction manual is extremely difficult to understand. It took me hours to assemble what should have been a 20-minute job.","The sentiment of the text is Negative. The words ""extremely difficult"" and ""hours"" convey frustration and disappointment, indicating a negative experience with the instruction manual.",2026-07-12T21:56:20.272559
+classification,zero_shot,llama3-70b,0,The product arrived on time and works exactly as described. I couldn't be happier with my purchase.,"Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Input: The product arrived on time and works exactly as described. I couldn't be happier with my purchase.","The sentiment of the text is: Positive.
+
+The text expresses satisfaction and happiness with the product and the purchase experience, using phrases such as ""works exactly as described"" and ""I couldn't be happier"", which indicate a strongly positive sentiment.",2026-07-12T21:56:21.124567
+classification,zero_shot,llama3-70b,1,"I waited three weeks for this to ship, and when it finally arrived, the packaging was completely destroyed. The item inside is dented.","Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Input: I waited three weeks for this to ship, and when it finally arrived, the packaging was completely destroyed. The item inside is dented.",The sentiment of the text is Negative. The customer expresses frustration with the long shipping time and is unhappy with the condition of the packaging and the item upon arrival.,2026-07-12T21:56:21.991359
+classification,zero_shot,llama3-70b,2,"The movie was okay. It had some good action scenes, but the plot was a bit predictable. Not the best, but not the worst.","Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Input: The movie was okay. It had some good action scenes, but the plot was a bit predictable. Not the best, but not the worst.","I would classify the sentiment of the text as Neutral. The text mentions both positive (good action scenes) and negative (predictable plot) aspects of the movie, but the overall tone is neither overwhelmingly positive nor negative, and the phrase ""not the best, but not the worst"" suggests a middling opinion.",2026-07-12T21:56:22.832159
+classification,zero_shot,llama3-70b,3,Customer service was incredibly helpful when I called about a billing issue. They resolved it in under five minutes!,"Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Input: Customer service was incredibly helpful when I called about a billing issue. They resolved it in under five minutes!","The sentiment of the text is: Positive.
+
+The text expresses satisfaction and appreciation for the customer service, using words like ""incredibly helpful"" and stating that the issue was resolved quickly, which indicates a positive experience.",2026-07-12T21:56:23.580984
+classification,zero_shot,llama3-70b,4,The instruction manual is extremely difficult to understand. It took me hours to assemble what should have been a 20-minute job.,"Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Input: The instruction manual is extremely difficult to understand. It took me hours to assemble what should have been a 20-minute job.","The sentiment of the text is Negative. The user expresses frustration with the instruction manual, stating it is ""extremely difficult to understand"" and that it caused a significant delay in completing a task.",2026-07-12T21:56:24.410064
+classification,few_shot,llama3-8b,0,The product arrived on time and works exactly as described. I couldn't be happier with my purchase.,"Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Example 1:
+Input: I absolutely loved the service, it was fantastic!
+Output: Positive
+
+Example 2:
+Input: The food was terribly bland and cold.
+Output: Negative
+
+Input: The product arrived on time and works exactly as described. I couldn't be happier with my purchase.","The sentiment of the given text can be classified as Positive. 
+
+The text mentions two positive aspects: 
+
+1. The product arrived on time, which implies reliability and good service.
+2. The product works exactly as described, which implies that it meets expectations.
+3. The phrase ""I couldn't be happier with my purchase"" explicitly expresses a positive sentiment.",2026-07-12T21:56:25.177669
+classification,few_shot,llama3-8b,1,"I waited three weeks for this to ship, and when it finally arrived, the packaging was completely destroyed. The item inside is dented.","Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Example 1:
+Input: I absolutely loved the service, it was fantastic!
+Output: Positive
+
+Example 2:
+Input: The food was terribly bland and cold.
+Output: Negative
+
+Input: I waited three weeks for this to ship, and when it finally arrived, the packaging was completely destroyed. The item inside is dented.","The sentiment of the given text can be classified as Negative.
+
+The text mentions several negative aspects:
+
+- The item took three weeks to ship, implying a long wait time.
+- The packaging was completely destroyed.
+- The item inside is dented.
+
+These negative points outweigh any potential neutral or positive aspects, resulting in a negative overall sentiment.",2026-07-12T21:56:25.978682
+classification,few_shot,llama3-8b,2,"The movie was okay. It had some good action scenes, but the plot was a bit predictable. Not the best, but not the worst.","Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Example 1:
+Input: I absolutely loved the service, it was fantastic!
+Output: Positive
+
+Example 2:
+Input: The food was terribly bland and cold.
+Output: Negative
+
+Input: The movie was okay. It had some good action scenes, but the plot was a bit predictable. Not the best, but not the worst.","To classify the sentiment of the given text, I'll analyze the words and phrases used:
+
+- ""The movie was okay"" suggests a neutral or average experience.
+- ""It had some good action scenes"" implies a positive aspect.
+- ""but the plot was a bit predictable"" suggests a negative aspect.
+- ""Not the best, but not the worst"" further emphasizes a neutral or average experience.
+
+Considering these points, the overall sentiment of the text is Neutral, as it contains both positive and negative aspects, but neither one dominates the other.",2026-07-12T21:56:26.870911
+classification,few_shot,llama3-8b,3,Customer service was incredibly helpful when I called about a billing issue. They resolved it in under five minutes!,"Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Example 1:
+Input: I absolutely loved the service, it was fantastic!
+Output: Positive
+
+Example 2:
+Input: The food was terribly bland and cold.
+Output: Negative
+
+Input: Customer service was incredibly helpful when I called about a billing issue. They resolved it in under five minutes!","The sentiment of the given text is Positive. 
+
+The words ""incredibly helpful"" and ""resolved it in under five minutes"" convey a positive tone, indicating satisfaction with the customer service.",2026-07-12T21:56:27.562377
+classification,few_shot,llama3-8b,4,The instruction manual is extremely difficult to understand. It took me hours to assemble what should have been a 20-minute job.,"Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Example 1:
+Input: I absolutely loved the service, it was fantastic!
+Output: Positive
+
+Example 2:
+Input: The food was terribly bland and cold.
+Output: Negative
+
+Input: The instruction manual is extremely difficult to understand. It took me hours to assemble what should have been a 20-minute job.","The sentiment of the given text is Negative. 
+
+The words ""terribly"", ""bland"", and ""cold"" have negative connotations, and the phrase ""extremely difficult to understand"" also implies a negative experience. Additionally, the comparison of the assembly time to what ""should have been a 20-minute job"" suggests that the actual experience was much worse than expected, further emphasizing the negative sentiment.",2026-07-12T21:56:28.428609
+classification,few_shot,llama3-70b,0,The product arrived on time and works exactly as described. I couldn't be happier with my purchase.,"Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Example 1:
+Input: I absolutely loved the service, it was fantastic!
+Output: Positive
+
+Example 2:
+Input: The food was terribly bland and cold.
+Output: Negative
+
+Input: The product arrived on time and works exactly as described. I couldn't be happier with my purchase.",Positive.,2026-07-12T21:56:29.062287
+classification,few_shot,llama3-70b,1,"I waited three weeks for this to ship, and when it finally arrived, the packaging was completely destroyed. The item inside is dented.","Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Example 1:
+Input: I absolutely loved the service, it was fantastic!
+Output: Positive
+
+Example 2:
+Input: The food was terribly bland and cold.
+Output: Negative
+
+Input: I waited three weeks for this to ship, and when it finally arrived, the packaging was completely destroyed. The item inside is dented.",Output: Negative,2026-07-12T21:56:29.797391
+classification,few_shot,llama3-70b,2,"The movie was okay. It had some good action scenes, but the plot was a bit predictable. Not the best, but not the worst.","Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Example 1:
+Input: I absolutely loved the service, it was fantastic!
+Output: Positive
+
+Example 2:
+Input: The food was terribly bland and cold.
+Output: Negative
+
+Input: The movie was okay. It had some good action scenes, but the plot was a bit predictable. Not the best, but not the worst.","Output: Neutral
+
+The text expresses a mixed opinion, mentioning both positive (good action scenes) and negative (predictable plot) aspects, but ultimately concludes with a neutral assessment (""not the best, but not the worst"" and ""The movie was okay""). This suggests that the overall sentiment is neither overwhelmingly positive nor negative, but rather neutral.",2026-07-12T21:56:30.691561
+classification,few_shot,llama3-70b,3,Customer service was incredibly helpful when I called about a billing issue. They resolved it in under five minutes!,"Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Example 1:
+Input: I absolutely loved the service, it was fantastic!
+Output: Positive
+
+Example 2:
+Input: The food was terribly bland and cold.
+Output: Negative
+
+Input: Customer service was incredibly helpful when I called about a billing issue. They resolved it in under five minutes!",Positive.,2026-07-12T21:56:31.434063
+classification,few_shot,llama3-70b,4,The instruction manual is extremely difficult to understand. It took me hours to assemble what should have been a 20-minute job.,"Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Example 1:
+Input: I absolutely loved the service, it was fantastic!
+Output: Positive
+
+Example 2:
+Input: The food was terribly bland and cold.
+Output: Negative
+
+Input: The instruction manual is extremely difficult to understand. It took me hours to assemble what should have been a 20-minute job.",Output: Negative,2026-07-12T21:56:32.167341
+classification,chain_of_thought,llama3-8b,0,The product arrived on time and works exactly as described. I couldn't be happier with my purchase.,"Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Let's think step by step.
+
+Input: The product arrived on time and works exactly as described. I couldn't be happier with my purchase.","The sentiment of the given text is Positive. The phrases ""I couldn't be happier"" and the overall description of the product working as expected convey a strong sense of satisfaction and happiness, indicating a positive sentiment.",2026-07-12T21:56:32.911122
+classification,chain_of_thought,llama3-8b,1,"I waited three weeks for this to ship, and when it finally arrived, the packaging was completely destroyed. The item inside is dented.","Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Let's think step by step.
+
+Input: I waited three weeks for this to ship, and when it finally arrived, the packaging was completely destroyed. The item inside is dented.","The sentiment of the text is Negative. The customer is expressing frustration and disappointment with the shipping process, as the item took three weeks to arrive and was damaged upon delivery.",2026-07-12T21:56:33.611488
+classification,chain_of_thought,llama3-8b,2,"The movie was okay. It had some good action scenes, but the plot was a bit predictable. Not the best, but not the worst.","Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Let's think step by step.
+
+Input: The movie was okay. It had some good action scenes, but the plot was a bit predictable. Not the best, but not the worst.","The sentiment of the given text can be classified as Neutral. 
+
+Although the text mentions some negative aspects, such as the plot being ""predictable"" and the movie not being ""the best,"" it also mentions some positive aspects, like the ""good action scenes."" The overall tone is balanced, with neither positive nor negative emotions dominating the text.",2026-07-12T21:56:34.492943
+classification,chain_of_thought,llama3-8b,3,Customer service was incredibly helpful when I called about a billing issue. They resolved it in under five minutes!,"Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Let's think step by step.
+
+Input: Customer service was incredibly helpful when I called about a billing issue. They resolved it in under five minutes!","The sentiment of the text is Positive. The customer expresses satisfaction with the customer service they received, specifically mentioning that the issue was resolved quickly and efficiently.",2026-07-12T21:56:35.317438
+classification,chain_of_thought,llama3-8b,4,The instruction manual is extremely difficult to understand. It took me hours to assemble what should have been a 20-minute job.,"Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Let's think step by step.
+
+Input: The instruction manual is extremely difficult to understand. It took me hours to assemble what should have been a 20-minute job.","The sentiment of the text is Negative. The words ""extremely difficult"" and ""hours"" convey frustration and disappointment, indicating a negative sentiment.",2026-07-12T21:56:36.246257
+classification,chain_of_thought,llama3-70b,0,The product arrived on time and works exactly as described. I couldn't be happier with my purchase.,"Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Let's think step by step.
+
+Input: The product arrived on time and works exactly as described. I couldn't be happier with my purchase.","The sentiment of the text is: Positive.
+
+The text contains phrases such as ""arrived on time"", ""works exactly as described"", and ""I couldn't be happier"", which all indicate a very satisfied and positive tone.",2026-07-12T21:56:37.112024
+classification,chain_of_thought,llama3-70b,1,"I waited three weeks for this to ship, and when it finally arrived, the packaging was completely destroyed. The item inside is dented.","Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Let's think step by step.
+
+Input: I waited three weeks for this to ship, and when it finally arrived, the packaging was completely destroyed. The item inside is dented.","The sentiment of the given text is: Negative.
+
+The text expresses dissatisfaction and frustration with the shipping and packaging of an item, mentioning a long wait, destroyed packaging, and a dented item, which all contribute to a negative sentiment.",2026-07-12T21:56:37.974996
+classification,chain_of_thought,llama3-70b,2,"The movie was okay. It had some good action scenes, but the plot was a bit predictable. Not the best, but not the worst.","Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Let's think step by step.
+
+Input: The movie was okay. It had some good action scenes, but the plot was a bit predictable. Not the best, but not the worst.","After analyzing the text, I would classify the sentiment as Neutral.
+
+The text states that the movie was ""okay"", which is a neutral phrase. It also mentions some positive aspects (""good action scenes"") and some negative aspects (""plot was a bit predictable""), but overall, the tone is balanced and neither overwhelmingly positive nor negative. The phrase ""Not the best, but not the worst"" further reinforces the neutral sentiment.",2026-07-12T21:56:38.814748
+classification,chain_of_thought,llama3-70b,3,Customer service was incredibly helpful when I called about a billing issue. They resolved it in under five minutes!,"Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Let's think step by step.
+
+Input: Customer service was incredibly helpful when I called about a billing issue. They resolved it in under five minutes!","The sentiment of the text is: Positive.
+
+The text uses words and phrases with positive connotations, such as ""incredibly helpful"" and ""resolved it in under five minutes"", which indicate a satisfactory and efficient experience with the customer service.",2026-07-12T21:56:39.663972
+classification,chain_of_thought,llama3-70b,4,The instruction manual is extremely difficult to understand. It took me hours to assemble what should have been a 20-minute job.,"Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Let's think step by step.
+
+Input: The instruction manual is extremely difficult to understand. It took me hours to assemble what should have been a 20-minute job.","The sentiment of the given text is: Negative.
+
+The text expresses frustration and dissatisfaction with the instruction manual, stating that it is ""extremely difficult to understand"" and that it caused a significant delay in completing a task. The tone is critical and complaining, indicating a negative sentiment.",2026-07-12T21:56:40.529346
+classification,role_based,llama3-8b,0,The product arrived on time and works exactly as described. I couldn't be happier with my purchase.,"You are an expert linguist and customer sentiment analyst. Your task is to accurately deduce the underlying emotion of the text.
+
+Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Input: The product arrived on time and works exactly as described. I couldn't be happier with my purchase.","Based on the text, I would classify the sentiment as **Positive**. The key phrases that indicate a positive sentiment are:
+
+- ""I couldn't be happier with my purchase"" - This phrase explicitly expresses a high level of satisfaction and happiness.
+- ""works exactly as described"" - This phrase suggests that the product met the customer's expectations, which is a positive experience.
+- ""arrived on time"" - This phrase implies that the customer received the product promptly, which is also a positive experience.
+
+Overall, the text conveys a sense of satisfaction, happiness, and positive experience with the product, which indicates a positive sentiment.",2026-07-12T21:56:41.313874
+classification,role_based,llama3-8b,1,"I waited three weeks for this to ship, and when it finally arrived, the packaging was completely destroyed. The item inside is dented.","You are an expert linguist and customer sentiment analyst. Your task is to accurately deduce the underlying emotion of the text.
+
+Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Input: I waited three weeks for this to ship, and when it finally arrived, the packaging was completely destroyed. The item inside is dented.","Based on the text, I would classify the sentiment as Negative. 
+
+Although the text mentions that the item inside is dented, which is a negative aspect, the primary focus of the text is on the poor shipping experience, specifically the destroyed packaging and the long wait time of three weeks. These factors contribute to a negative overall sentiment.",2026-07-12T21:56:42.048997
+classification,role_based,llama3-8b,2,"The movie was okay. It had some good action scenes, but the plot was a bit predictable. Not the best, but not the worst.","You are an expert linguist and customer sentiment analyst. Your task is to accurately deduce the underlying emotion of the text.
+
+Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Input: The movie was okay. It had some good action scenes, but the plot was a bit predictable. Not the best, but not the worst.","After analyzing the text, I would classify the sentiment as Neutral. 
+
+Here's why:
+
+- The text starts with ""The movie was okay,"" which is a neutral statement. It neither praises nor criticizes the movie.
+- The text mentions ""some good action scenes,"" which is a positive aspect, but it's not the main focus.
+- The text also mentions ""the plot was a bit predictable,"" which is a negative aspect, but it's not strongly worded.
+- The text concludes with ""Not the best, but not the worst,"" which reinforces the neutral sentiment. It's a balanced assessment that neither strongly praises nor criticizes the movie.
+
+Overall, the text presents a balanced view of the movie, highlighting both positive and negative aspects, but without expressing a strong emotional tone.",2026-07-12T21:56:42.976235
+classification,role_based,llama3-8b,3,Customer service was incredibly helpful when I called about a billing issue. They resolved it in under five minutes!,"You are an expert linguist and customer sentiment analyst. Your task is to accurately deduce the underlying emotion of the text.
+
+Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Input: Customer service was incredibly helpful when I called about a billing issue. They resolved it in under five minutes!","Based on the text, I would classify the sentiment as Positive. The customer expresses satisfaction with the customer service they received, specifically mentioning that the issue was resolved quickly and efficiently. The use of the word ""incredibly"" also emphasizes the high level of service they received, further indicating a positive sentiment.",2026-07-12T21:56:43.782234
+classification,role_based,llama3-8b,4,The instruction manual is extremely difficult to understand. It took me hours to assemble what should have been a 20-minute job.,"You are an expert linguist and customer sentiment analyst. Your task is to accurately deduce the underlying emotion of the text.
+
+Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Input: The instruction manual is extremely difficult to understand. It took me hours to assemble what should have been a 20-minute job.","Based on the text, I would classify the sentiment as Negative. The words ""extremely difficult"" and ""hours"" convey a sense of frustration and time-consuming effort, which are negative emotions. Additionally, the phrase ""what should have been a 20-minute job"" implies a sense of disappointment and expectation not met, further reinforcing the negative sentiment.",2026-07-12T21:56:44.505202
+classification,role_based,llama3-70b,0,The product arrived on time and works exactly as described. I couldn't be happier with my purchase.,"You are an expert linguist and customer sentiment analyst. Your task is to accurately deduce the underlying emotion of the text.
+
+Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Input: The product arrived on time and works exactly as described. I couldn't be happier with my purchase.","After analyzing the text, I would classify the sentiment as: **Positive**
+
+The indicators of a positive sentiment in this text include:
+
+* The product arrived on time, which suggests a positive experience with the shipping and delivery process.
+* The product ""works exactly as described"", which implies that the customer's expectations were met.
+* The phrase ""I couldn't be happier"" is a strong expression of satisfaction and delight, which further reinforces the positive sentiment.
+
+Overall, the text expresses a high level of satisfaction and happiness with the purchase, which is characteristic of a positive sentiment.",2026-07-12T21:56:45.611078
+classification,role_based,llama3-70b,1,"I waited three weeks for this to ship, and when it finally arrived, the packaging was completely destroyed. The item inside is dented.","You are an expert linguist and customer sentiment analyst. Your task is to accurately deduce the underlying emotion of the text.
+
+Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Input: I waited three weeks for this to ship, and when it finally arrived, the packaging was completely destroyed. The item inside is dented.","The sentiment of the given text is Negative. 
+
+The customer expresses frustration and disappointment with their experience, citing a long wait time for shipping (three weeks) and damage to the packaging and the item itself. The use of the phrase ""completely destroyed"" to describe the packaging and ""dented"" to describe the item inside emphasizes the customer's negative emotions, indicating a strong sense of dissatisfaction.",2026-07-12T21:56:46.574785
+classification,role_based,llama3-70b,2,"The movie was okay. It had some good action scenes, but the plot was a bit predictable. Not the best, but not the worst.","You are an expert linguist and customer sentiment analyst. Your task is to accurately deduce the underlying emotion of the text.
+
+Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Input: The movie was okay. It had some good action scenes, but the plot was a bit predictable. Not the best, but not the worst.","After analyzing the text, I would classify the sentiment as Neutral.
+
+The text contains both positive and negative comments, but they are balanced in a way that suggests the speaker has a middling opinion. The use of phrases like ""The movie was okay"" and ""Not the best, but not the worst"" implies a lack of strong emotion, either positive or negative. The speaker mentions some positive aspects (""good action scenes""), but also criticizes the plot for being ""a bit predictable"", which prevents the sentiment from leaning towards Positive. Overall, the tone is lukewarm and neutral.",2026-07-12T21:56:47.590945
+classification,role_based,llama3-70b,3,Customer service was incredibly helpful when I called about a billing issue. They resolved it in under five minutes!,"You are an expert linguist and customer sentiment analyst. Your task is to accurately deduce the underlying emotion of the text.
+
+Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Input: Customer service was incredibly helpful when I called about a billing issue. They resolved it in under five minutes!","After analyzing the text, I would classify the sentiment as: **Positive**
+
+The language used in the text, such as ""incredibly helpful"" and ""resolved it in under five minutes"", indicates a high level of satisfaction and appreciation for the customer service experience. The tone is upbeat and enthusiastic, suggesting that the customer is extremely pleased with the outcome. Overall, the sentiment is overwhelmingly positive.",2026-07-12T21:56:48.595577
+classification,role_based,llama3-70b,4,The instruction manual is extremely difficult to understand. It took me hours to assemble what should have been a 20-minute job.,"You are an expert linguist and customer sentiment analyst. Your task is to accurately deduce the underlying emotion of the text.
+
+Classify the sentiment of the following text as Positive, Negative, or Neutral.
+
+Input: The instruction manual is extremely difficult to understand. It took me hours to assemble what should have been a 20-minute job.","After analyzing the text, I would classify the sentiment as Negative.
+
+The language used in the text expresses frustration and dissatisfaction. The phrase ""extremely difficult to understand"" has a strong negative connotation, and the fact that the task took ""hours"" instead of the expected ""20-minute job"" implies a sense of annoyance and disappointment. The overall tone of the text suggests that the customer is unhappy with their experience, which further supports the classification of the sentiment as Negative.",2026-07-12T21:56:49.609594
+summarization,zero_shot,llama3-8b,0,"The James Webb Space Telescope (JWST) is an infrared space observatory that launched on December 25, 2021. It is the largest and most powerful space telescope ever built. JWST's high resolution and sensitivity allow it to view objects too old, distant, or faint for the Hubble Space Telescope. Its primary mission is to investigate the origins of the universe, including the formation of the first stars and galaxies.","Summarize the following passage in 2-3 sentences.
+
+Input: The James Webb Space Telescope (JWST) is an infrared space observatory that launched on December 25, 2021. It is the largest and most powerful space telescope ever built. JWST's high resolution and sensitivity allow it to view objects too old, distant, or faint for the Hubble Space Telescope. Its primary mission is to investigate the origins of the universe, including the formation of the first stars and galaxies.","The James Webb Space Telescope (JWST) is a powerful infrared space observatory launched on December 25, 2021. It is the largest and most powerful space telescope ever built, offering high resolution and sensitivity to study distant and faint objects. JWST's primary mission is to explore the origins of the universe, including the formation of the first stars and galaxies.",2026-07-12T21:56:50.297554
+summarization,zero_shot,llama3-8b,1,"Nuclear fusion is the process by which two light atomic nuclei combine to form a single heavier one while releasing massive amounts of energy. It is the reaction that powers the sun and other stars. Scientists have been trying for decades to replicate this process on Earth to create a clean, nearly limitless source of energy, but containing the superheated plasma required for fusion remains a significant technological challenge.","Summarize the following passage in 2-3 sentences.
+
+Input: Nuclear fusion is the process by which two light atomic nuclei combine to form a single heavier one while releasing massive amounts of energy. It is the reaction that powers the sun and other stars. Scientists have been trying for decades to replicate this process on Earth to create a clean, nearly limitless source of energy, but containing the superheated plasma required for fusion remains a significant technological challenge.","Here's a summary of the passage in 3 sentences:
+
+Nuclear fusion is a process where two light atomic nuclei combine to form a heavier one, releasing massive energy. This reaction powers the sun and other stars, and scientists aim to replicate it on Earth for a clean, limitless energy source. However, containing the superheated plasma required for fusion remains a significant technological challenge.",2026-07-12T21:56:51.028053
+summarization,zero_shot,llama3-8b,2,"Artificial intelligence (AI) regulation is becoming a major priority for governments worldwide. The European Union recently passed the AI Act, which categorizes AI systems by risk level and imposes strict requirements on high-risk applications. Meanwhile, the United States is pursuing a more decentralized approach, relying on executive orders and agency-specific guidelines rather than sweeping federal legislation, sparking debates over innovation versus safety.","Summarize the following passage in 2-3 sentences.
+
+Input: Artificial intelligence (AI) regulation is becoming a major priority for governments worldwide. The European Union recently passed the AI Act, which categorizes AI systems by risk level and imposes strict requirements on high-risk applications. Meanwhile, the United States is pursuing a more decentralized approach, relying on executive orders and agency-specific guidelines rather than sweeping federal legislation, sparking debates over innovation versus safety.","Governments worldwide are prioritizing artificial intelligence (AI) regulation, with the European Union passing the AI Act to categorize and regulate high-risk AI applications. In contrast, the United States is taking a more decentralized approach, relying on executive orders and agency-specific guidelines. This differing approach has sparked debates over balancing innovation with safety.",2026-07-12T21:56:51.736053
+summarization,zero_shot,llama3-8b,3,"The Mediterranean diet, characterized by high consumption of vegetables, fruits, whole grains, beans, nuts, and olive oil, is widely considered one of the healthiest diets in the world. Numerous studies have linked it to a reduced risk of heart disease, stroke, and certain types of cancer. Unlike restrictive diets, it emphasizes lifestyle factors such as eating with family and getting regular physical activity.","Summarize the following passage in 2-3 sentences.
+
+Input: The Mediterranean diet, characterized by high consumption of vegetables, fruits, whole grains, beans, nuts, and olive oil, is widely considered one of the healthiest diets in the world. Numerous studies have linked it to a reduced risk of heart disease, stroke, and certain types of cancer. Unlike restrictive diets, it emphasizes lifestyle factors such as eating with family and getting regular physical activity.","The Mediterranean diet is considered one of the healthiest diets globally due to its emphasis on whole foods like vegetables, fruits, and whole grains. It has been linked to a reduced risk of heart disease, stroke, and certain cancers. This diet focuses on lifestyle factors, such as family meals and regular physical activity, rather than restrictive eating.",2026-07-12T21:56:52.559742
+summarization,zero_shot,llama3-8b,4,"Quantum computing represents a paradigm shift from classical computing. Instead of using bits that represent either a 0 or a 1, quantum computers use quantum bits, or qubits, which can exist in multiple states simultaneously thanks to superposition. This property, along with entanglement, theoretically allows quantum computers to solve certain complex problems—such as factoring large numbers and simulating molecular interactions—exponentially faster than the best supercomputers.","Summarize the following passage in 2-3 sentences.
+
+Input: Quantum computing represents a paradigm shift from classical computing. Instead of using bits that represent either a 0 or a 1, quantum computers use quantum bits, or qubits, which can exist in multiple states simultaneously thanks to superposition. This property, along with entanglement, theoretically allows quantum computers to solve certain complex problems—such as factoring large numbers and simulating molecular interactions—exponentially faster than the best supercomputers.","Here's a 3-sentence summary of the passage:
+
+Quantum computing represents a significant shift from classical computing. Quantum computers use qubits, which can exist in multiple states at once due to superposition, allowing for faster problem-solving. This enables quantum computers to solve complex problems, such as factoring large numbers and simulating molecular interactions, exponentially faster than classical supercomputers.",2026-07-12T21:56:53.262327
+summarization,zero_shot,llama3-70b,0,"The James Webb Space Telescope (JWST) is an infrared space observatory that launched on December 25, 2021. It is the largest and most powerful space telescope ever built. JWST's high resolution and sensitivity allow it to view objects too old, distant, or faint for the Hubble Space Telescope. Its primary mission is to investigate the origins of the universe, including the formation of the first stars and galaxies.","Summarize the following passage in 2-3 sentences.
+
+Input: The James Webb Space Telescope (JWST) is an infrared space observatory that launched on December 25, 2021. It is the largest and most powerful space telescope ever built. JWST's high resolution and sensitivity allow it to view objects too old, distant, or faint for the Hubble Space Telescope. Its primary mission is to investigate the origins of the universe, including the formation of the first stars and galaxies.","The James Webb Space Telescope (JWST) is a powerful infrared space observatory that launched on December 25, 2021, and is the largest of its kind. With its high resolution and sensitivity, JWST can view objects that are too old, distant, or faint for other telescopes, such as the Hubble Space Telescope. The JWST's primary mission is to study the origins of the universe, including the formation of the first stars and galaxies.",2026-07-12T21:56:54.098094
+summarization,zero_shot,llama3-70b,1,"Nuclear fusion is the process by which two light atomic nuclei combine to form a single heavier one while releasing massive amounts of energy. It is the reaction that powers the sun and other stars. Scientists have been trying for decades to replicate this process on Earth to create a clean, nearly limitless source of energy, but containing the superheated plasma required for fusion remains a significant technological challenge.","Summarize the following passage in 2-3 sentences.
+
+Input: Nuclear fusion is the process by which two light atomic nuclei combine to form a single heavier one while releasing massive amounts of energy. It is the reaction that powers the sun and other stars. Scientists have been trying for decades to replicate this process on Earth to create a clean, nearly limitless source of energy, but containing the superheated plasma required for fusion remains a significant technological challenge.","Nuclear fusion is a process where two light atomic nuclei combine to form a heavier one, releasing massive amounts of energy. This process powers the sun and other stars, and scientists have been attempting to replicate it on Earth to create a clean and nearly limitless source of energy. However, containing the superheated plasma required for fusion remains a significant technological hurdle.",2026-07-12T21:56:54.869419
+summarization,zero_shot,llama3-70b,2,"Artificial intelligence (AI) regulation is becoming a major priority for governments worldwide. The European Union recently passed the AI Act, which categorizes AI systems by risk level and imposes strict requirements on high-risk applications. Meanwhile, the United States is pursuing a more decentralized approach, relying on executive orders and agency-specific guidelines rather than sweeping federal legislation, sparking debates over innovation versus safety.","Summarize the following passage in 2-3 sentences.
+
+Input: Artificial intelligence (AI) regulation is becoming a major priority for governments worldwide. The European Union recently passed the AI Act, which categorizes AI systems by risk level and imposes strict requirements on high-risk applications. Meanwhile, the United States is pursuing a more decentralized approach, relying on executive orders and agency-specific guidelines rather than sweeping federal legislation, sparking debates over innovation versus safety.","Governments worldwide are prioritizing the regulation of artificial intelligence (AI), with the European Union recently passing the AI Act to categorize and impose requirements on AI systems. In contrast, the United States is taking a more decentralized approach, relying on executive orders and agency guidelines rather than federal legislation. This difference in approach has sparked debates over balancing innovation with safety in the development and use of AI.",2026-07-12T21:56:55.707792
+summarization,zero_shot,llama3-70b,3,"The Mediterranean diet, characterized by high consumption of vegetables, fruits, whole grains, beans, nuts, and olive oil, is widely considered one of the healthiest diets in the world. Numerous studies have linked it to a reduced risk of heart disease, stroke, and certain types of cancer. Unlike restrictive diets, it emphasizes lifestyle factors such as eating with family and getting regular physical activity.","Summarize the following passage in 2-3 sentences.
+
+Input: The Mediterranean diet, characterized by high consumption of vegetables, fruits, whole grains, beans, nuts, and olive oil, is widely considered one of the healthiest diets in the world. Numerous studies have linked it to a reduced risk of heart disease, stroke, and certain types of cancer. Unlike restrictive diets, it emphasizes lifestyle factors such as eating with family and getting regular physical activity.","The Mediterranean diet is considered one of the healthiest diets globally, characterized by high consumption of vegetables, fruits, and whole grains. It has been linked to a reduced risk of heart disease, stroke, and certain cancers through numerous studies. The diet also emphasizes lifestyle factors, such as social eating and regular physical activity, rather than restrictive eating habits.",2026-07-12T21:56:56.479427
+summarization,zero_shot,llama3-70b,4,"Quantum computing represents a paradigm shift from classical computing. Instead of using bits that represent either a 0 or a 1, quantum computers use quantum bits, or qubits, which can exist in multiple states simultaneously thanks to superposition. This property, along with entanglement, theoretically allows quantum computers to solve certain complex problems—such as factoring large numbers and simulating molecular interactions—exponentially faster than the best supercomputers.","Summarize the following passage in 2-3 sentences.
+
+Input: Quantum computing represents a paradigm shift from classical computing. Instead of using bits that represent either a 0 or a 1, quantum computers use quantum bits, or qubits, which can exist in multiple states simultaneously thanks to superposition. This property, along with entanglement, theoretically allows quantum computers to solve certain complex problems—such as factoring large numbers and simulating molecular interactions—exponentially faster than the best supercomputers.","Quantum computing marks a significant departure from classical computing, utilizing quantum bits (qubits) that can exist in multiple states at once. This property, combined with entanglement, enables quantum computers to potentially solve complex problems exponentially faster than traditional supercomputers. Quantum computers can tackle challenges such as factoring large numbers and simulating molecular interactions with unprecedented speed.",2026-07-12T21:56:57.284015
+summarization,few_shot,llama3-8b,0,"The James Webb Space Telescope (JWST) is an infrared space observatory that launched on December 25, 2021. It is the largest and most powerful space telescope ever built. JWST's high resolution and sensitivity allow it to view objects too old, distant, or faint for the Hubble Space Telescope. Its primary mission is to investigate the origins of the universe, including the formation of the first stars and galaxies.","Summarize the following passage in 2-3 sentences.
+
+Example 1:
+Input: Photosynthesis is a process used by plants and other organisms to convert light energy into chemical energy that, through cellular respiration, can later be released to fuel the organism's activities. This chemical energy is stored in carbohydrate molecules, such as sugars and starches, which are synthesized from carbon dioxide and water.
+Output: Plants use photosynthesis to turn light energy into chemical energy. This energy is stored as carbohydrates like sugars and starches.
+
+Input: The James Webb Space Telescope (JWST) is an infrared space observatory that launched on December 25, 2021. It is the largest and most powerful space telescope ever built. JWST's high resolution and sensitivity allow it to view objects too old, distant, or faint for the Hubble Space Telescope. Its primary mission is to investigate the origins of the universe, including the formation of the first stars and galaxies.","Here's a 3-sentence summary of the passage:
+
+The passage contains two separate examples of text summarization. The first example summarizes the process of photosynthesis, explaining how plants convert light energy into chemical energy stored in carbohydrates. The second example provides information about the James Webb Space Telescope, its capabilities, and its primary mission to study the origins of the universe.",2026-07-12T21:56:58.122717
+summarization,few_shot,llama3-8b,1,"Nuclear fusion is the process by which two light atomic nuclei combine to form a single heavier one while releasing massive amounts of energy. It is the reaction that powers the sun and other stars. Scientists have been trying for decades to replicate this process on Earth to create a clean, nearly limitless source of energy, but containing the superheated plasma required for fusion remains a significant technological challenge.","Summarize the following passage in 2-3 sentences.
+
+Example 1:
+Input: Photosynthesis is a process used by plants and other organisms to convert light energy into chemical energy that, through cellular respiration, can later be released to fuel the organism's activities. This chemical energy is stored in carbohydrate molecules, such as sugars and starches, which are synthesized from carbon dioxide and water.
+Output: Plants use photosynthesis to turn light energy into chemical energy. This energy is stored as carbohydrates like sugars and starches.
+
+Input: Nuclear fusion is the process by which two light atomic nuclei combine to form a single heavier one while releasing massive amounts of energy. It is the reaction that powers the sun and other stars. Scientists have been trying for decades to replicate this process on Earth to create a clean, nearly limitless source of energy, but containing the superheated plasma required for fusion remains a significant technological challenge.","Here's a 3-sentence summary of the passage:
+
+The passage describes two different processes: photosynthesis and nuclear fusion. Photosynthesis is how plants convert light energy into chemical energy, storing it as carbohydrates like sugars and starches. Nuclear fusion, on the other hand, is a process where atomic nuclei combine to release massive amounts of energy, which scientists are trying to replicate on Earth for a clean energy source.",2026-07-12T21:56:58.969878
+summarization,few_shot,llama3-8b,2,"Artificial intelligence (AI) regulation is becoming a major priority for governments worldwide. The European Union recently passed the AI Act, which categorizes AI systems by risk level and imposes strict requirements on high-risk applications. Meanwhile, the United States is pursuing a more decentralized approach, relying on executive orders and agency-specific guidelines rather than sweeping federal legislation, sparking debates over innovation versus safety.","Summarize the following passage in 2-3 sentences.
+
+Example 1:
+Input: Photosynthesis is a process used by plants and other organisms to convert light energy into chemical energy that, through cellular respiration, can later be released to fuel the organism's activities. This chemical energy is stored in carbohydrate molecules, such as sugars and starches, which are synthesized from carbon dioxide and water.
+Output: Plants use photosynthesis to turn light energy into chemical energy. This energy is stored as carbohydrates like sugars and starches.
+
+Input: Artificial intelligence (AI) regulation is becoming a major priority for governments worldwide. The European Union recently passed the AI Act, which categorizes AI systems by risk level and imposes strict requirements on high-risk applications. Meanwhile, the United States is pursuing a more decentralized approach, relying on executive orders and agency-specific guidelines rather than sweeping federal legislation, sparking debates over innovation versus safety.","Here's a 3-sentence summary of the passage:
+
+The passage describes two different processes: photosynthesis, where plants convert light energy into chemical energy stored in carbohydrates, and artificial intelligence (AI) regulation. In the context of AI, governments worldwide are prioritizing regulation, with the European Union implementing the AI Act and the US taking a more decentralized approach. This differing approach has sparked debates over balancing innovation with safety in AI development.",2026-07-12T21:56:59.727247
+summarization,few_shot,llama3-8b,3,"The Mediterranean diet, characterized by high consumption of vegetables, fruits, whole grains, beans, nuts, and olive oil, is widely considered one of the healthiest diets in the world. Numerous studies have linked it to a reduced risk of heart disease, stroke, and certain types of cancer. Unlike restrictive diets, it emphasizes lifestyle factors such as eating with family and getting regular physical activity.","Summarize the following passage in 2-3 sentences.
+
+Example 1:
+Input: Photosynthesis is a process used by plants and other organisms to convert light energy into chemical energy that, through cellular respiration, can later be released to fuel the organism's activities. This chemical energy is stored in carbohydrate molecules, such as sugars and starches, which are synthesized from carbon dioxide and water.
+Output: Plants use photosynthesis to turn light energy into chemical energy. This energy is stored as carbohydrates like sugars and starches.
+
+Input: The Mediterranean diet, characterized by high consumption of vegetables, fruits, whole grains, beans, nuts, and olive oil, is widely considered one of the healthiest diets in the world. Numerous studies have linked it to a reduced risk of heart disease, stroke, and certain types of cancer. Unlike restrictive diets, it emphasizes lifestyle factors such as eating with family and getting regular physical activity.","Here's a 2-3 sentence summary of the passage:
+
+The passage describes two different processes: photosynthesis, where plants convert light energy into chemical energy stored in carbohydrates, and the Mediterranean diet, which is considered one of the healthiest diets in the world. The Mediterranean diet emphasizes whole foods, lifestyle factors, and regular physical activity to reduce the risk of heart disease and certain cancers. It is distinct from restrictive diets in its approach to healthy eating.",2026-07-12T21:57:00.513251
+summarization,few_shot,llama3-8b,4,"Quantum computing represents a paradigm shift from classical computing. Instead of using bits that represent either a 0 or a 1, quantum computers use quantum bits, or qubits, which can exist in multiple states simultaneously thanks to superposition. This property, along with entanglement, theoretically allows quantum computers to solve certain complex problems—such as factoring large numbers and simulating molecular interactions—exponentially faster than the best supercomputers.","Summarize the following passage in 2-3 sentences.
+
+Example 1:
+Input: Photosynthesis is a process used by plants and other organisms to convert light energy into chemical energy that, through cellular respiration, can later be released to fuel the organism's activities. This chemical energy is stored in carbohydrate molecules, such as sugars and starches, which are synthesized from carbon dioxide and water.
+Output: Plants use photosynthesis to turn light energy into chemical energy. This energy is stored as carbohydrates like sugars and starches.
+
+Input: Quantum computing represents a paradigm shift from classical computing. Instead of using bits that represent either a 0 or a 1, quantum computers use quantum bits, or qubits, which can exist in multiple states simultaneously thanks to superposition. This property, along with entanglement, theoretically allows quantum computers to solve certain complex problems—such as factoring large numbers and simulating molecular interactions—exponentially faster than the best supercomputers.","Here's a 3-sentence summary of the passage:
+
+The passage describes two different processes: photosynthesis and quantum computing. Photosynthesis is a process by which plants convert light energy into chemical energy, storing it in carbohydrates like sugars and starches. Quantum computing, on the other hand, uses quantum bits (qubits) to solve complex problems exponentially faster than classical computers.",2026-07-12T21:57:01.258024
+summarization,few_shot,llama3-70b,0,"The James Webb Space Telescope (JWST) is an infrared space observatory that launched on December 25, 2021. It is the largest and most powerful space telescope ever built. JWST's high resolution and sensitivity allow it to view objects too old, distant, or faint for the Hubble Space Telescope. Its primary mission is to investigate the origins of the universe, including the formation of the first stars and galaxies.","Summarize the following passage in 2-3 sentences.
+
+Example 1:
+Input: Photosynthesis is a process used by plants and other organisms to convert light energy into chemical energy that, through cellular respiration, can later be released to fuel the organism's activities. This chemical energy is stored in carbohydrate molecules, such as sugars and starches, which are synthesized from carbon dioxide and water.
+Output: Plants use photosynthesis to turn light energy into chemical energy. This energy is stored as carbohydrates like sugars and starches.
+
+Input: The James Webb Space Telescope (JWST) is an infrared space observatory that launched on December 25, 2021. It is the largest and most powerful space telescope ever built. JWST's high resolution and sensitivity allow it to view objects too old, distant, or faint for the Hubble Space Telescope. Its primary mission is to investigate the origins of the universe, including the formation of the first stars and galaxies.","The James Webb Space Telescope (JWST) is a powerful infrared space observatory that launched on December 25, 2021. It has high resolution and sensitivity, allowing it to view distant and faint objects that the Hubble Space Telescope cannot. The JWST's primary mission is to investigate the origins of the universe, including the formation of the first stars and galaxies.",2026-07-12T21:57:02.212999
+summarization,few_shot,llama3-70b,1,"Nuclear fusion is the process by which two light atomic nuclei combine to form a single heavier one while releasing massive amounts of energy. It is the reaction that powers the sun and other stars. Scientists have been trying for decades to replicate this process on Earth to create a clean, nearly limitless source of energy, but containing the superheated plasma required for fusion remains a significant technological challenge.","Summarize the following passage in 2-3 sentences.
+
+Example 1:
+Input: Photosynthesis is a process used by plants and other organisms to convert light energy into chemical energy that, through cellular respiration, can later be released to fuel the organism's activities. This chemical energy is stored in carbohydrate molecules, such as sugars and starches, which are synthesized from carbon dioxide and water.
+Output: Plants use photosynthesis to turn light energy into chemical energy. This energy is stored as carbohydrates like sugars and starches.
+
+Input: Nuclear fusion is the process by which two light atomic nuclei combine to form a single heavier one while releasing massive amounts of energy. It is the reaction that powers the sun and other stars. Scientists have been trying for decades to replicate this process on Earth to create a clean, nearly limitless source of energy, but containing the superheated plasma required for fusion remains a significant technological challenge.","Nuclear fusion is a process where two light atomic nuclei combine to form a heavier one, releasing large amounts of energy. This process powers the sun and other stars, and scientists are trying to replicate it on Earth as a clean and nearly limitless energy source. However, containing the superheated plasma required for fusion remains a significant technological challenge.",2026-07-12T21:57:03.133649
+summarization,few_shot,llama3-70b,2,"Artificial intelligence (AI) regulation is becoming a major priority for governments worldwide. The European Union recently passed the AI Act, which categorizes AI systems by risk level and imposes strict requirements on high-risk applications. Meanwhile, the United States is pursuing a more decentralized approach, relying on executive orders and agency-specific guidelines rather than sweeping federal legislation, sparking debates over innovation versus safety.","Summarize the following passage in 2-3 sentences.
+
+Example 1:
+Input: Photosynthesis is a process used by plants and other organisms to convert light energy into chemical energy that, through cellular respiration, can later be released to fuel the organism's activities. This chemical energy is stored in carbohydrate molecules, such as sugars and starches, which are synthesized from carbon dioxide and water.
+Output: Plants use photosynthesis to turn light energy into chemical energy. This energy is stored as carbohydrates like sugars and starches.
+
+Input: Artificial intelligence (AI) regulation is becoming a major priority for governments worldwide. The European Union recently passed the AI Act, which categorizes AI systems by risk level and imposes strict requirements on high-risk applications. Meanwhile, the United States is pursuing a more decentralized approach, relying on executive orders and agency-specific guidelines rather than sweeping federal legislation, sparking debates over innovation versus safety.","Governments worldwide are prioritizing the regulation of artificial intelligence (AI). The European Union has passed the AI Act, which categorizes AI systems by risk level and imposes strict requirements on high-risk applications. In contrast, the United States is taking a more decentralized approach, relying on executive orders and agency-specific guidelines to regulate AI.",2026-07-12T21:57:04.012216
+summarization,few_shot,llama3-70b,3,"The Mediterranean diet, characterized by high consumption of vegetables, fruits, whole grains, beans, nuts, and olive oil, is widely considered one of the healthiest diets in the world. Numerous studies have linked it to a reduced risk of heart disease, stroke, and certain types of cancer. Unlike restrictive diets, it emphasizes lifestyle factors such as eating with family and getting regular physical activity.","Summarize the following passage in 2-3 sentences.
+
+Example 1:
+Input: Photosynthesis is a process used by plants and other organisms to convert light energy into chemical energy that, through cellular respiration, can later be released to fuel the organism's activities. This chemical energy is stored in carbohydrate molecules, such as sugars and starches, which are synthesized from carbon dioxide and water.
+Output: Plants use photosynthesis to turn light energy into chemical energy. This energy is stored as carbohydrates like sugars and starches.
+
+Input: The Mediterranean diet, characterized by high consumption of vegetables, fruits, whole grains, beans, nuts, and olive oil, is widely considered one of the healthiest diets in the world. Numerous studies have linked it to a reduced risk of heart disease, stroke, and certain types of cancer. Unlike restrictive diets, it emphasizes lifestyle factors such as eating with family and getting regular physical activity.","The Mediterranean diet is considered one of the healthiest diets globally, characterized by high consumption of vegetables, fruits, and whole grains. It has been linked to a reduced risk of heart disease, stroke, and certain cancers. The diet also emphasizes lifestyle factors, such as eating with family and regular physical activity, rather than being overly restrictive.",2026-07-12T21:57:04.953204
+summarization,few_shot,llama3-70b,4,"Quantum computing represents a paradigm shift from classical computing. Instead of using bits that represent either a 0 or a 1, quantum computers use quantum bits, or qubits, which can exist in multiple states simultaneously thanks to superposition. This property, along with entanglement, theoretically allows quantum computers to solve certain complex problems—such as factoring large numbers and simulating molecular interactions—exponentially faster than the best supercomputers.","Summarize the following passage in 2-3 sentences.
+
+Example 1:
+Input: Photosynthesis is a process used by plants and other organisms to convert light energy into chemical energy that, through cellular respiration, can later be released to fuel the organism's activities. This chemical energy is stored in carbohydrate molecules, such as sugars and starches, which are synthesized from carbon dioxide and water.
+Output: Plants use photosynthesis to turn light energy into chemical energy. This energy is stored as carbohydrates like sugars and starches.
+
+Input: Quantum computing represents a paradigm shift from classical computing. Instead of using bits that represent either a 0 or a 1, quantum computers use quantum bits, or qubits, which can exist in multiple states simultaneously thanks to superposition. This property, along with entanglement, theoretically allows quantum computers to solve certain complex problems—such as factoring large numbers and simulating molecular interactions—exponentially faster than the best supercomputers.","Quantum computing is a new paradigm that differs from classical computing by using quantum bits (qubits) that can exist in multiple states at once. This property, combined with entanglement, enables quantum computers to solve complex problems exponentially faster than traditional supercomputers. Quantum computers can potentially solve problems like factoring large numbers and simulating molecular interactions much more quickly.",2026-07-12T21:57:05.760115
+summarization,chain_of_thought,llama3-8b,0,"The James Webb Space Telescope (JWST) is an infrared space observatory that launched on December 25, 2021. It is the largest and most powerful space telescope ever built. JWST's high resolution and sensitivity allow it to view objects too old, distant, or faint for the Hubble Space Telescope. Its primary mission is to investigate the origins of the universe, including the formation of the first stars and galaxies.","Summarize the following passage in 2-3 sentences.
+
+Let's think step by step.
+
+Input: The James Webb Space Telescope (JWST) is an infrared space observatory that launched on December 25, 2021. It is the largest and most powerful space telescope ever built. JWST's high resolution and sensitivity allow it to view objects too old, distant, or faint for the Hubble Space Telescope. Its primary mission is to investigate the origins of the universe, including the formation of the first stars and galaxies.","The James Webb Space Telescope (JWST) is a powerful infrared space observatory launched on December 25, 2021. It has a higher resolution and sensitivity than the Hubble Space Telescope, allowing it to observe distant and faint objects. JWST's primary mission is to study the origins of the universe, including the formation of the first stars and galaxies.",2026-07-12T21:57:06.477673
+summarization,chain_of_thought,llama3-8b,1,"Nuclear fusion is the process by which two light atomic nuclei combine to form a single heavier one while releasing massive amounts of energy. It is the reaction that powers the sun and other stars. Scientists have been trying for decades to replicate this process on Earth to create a clean, nearly limitless source of energy, but containing the superheated plasma required for fusion remains a significant technological challenge.","Summarize the following passage in 2-3 sentences.
+
+Let's think step by step.
+
+Input: Nuclear fusion is the process by which two light atomic nuclei combine to form a single heavier one while releasing massive amounts of energy. It is the reaction that powers the sun and other stars. Scientists have been trying for decades to replicate this process on Earth to create a clean, nearly limitless source of energy, but containing the superheated plasma required for fusion remains a significant technological challenge.","Here's a summary of the passage in 3 sentences:
+
+Nuclear fusion is a process where two light atomic nuclei combine to form a heavier one, releasing massive energy. This process powers the sun and other stars, and scientists have been trying to replicate it on Earth for decades. However, containing the superheated plasma required for fusion remains a significant technological challenge.",2026-07-12T21:57:07.184632
+summarization,chain_of_thought,llama3-8b,2,"Artificial intelligence (AI) regulation is becoming a major priority for governments worldwide. The European Union recently passed the AI Act, which categorizes AI systems by risk level and imposes strict requirements on high-risk applications. Meanwhile, the United States is pursuing a more decentralized approach, relying on executive orders and agency-specific guidelines rather than sweeping federal legislation, sparking debates over innovation versus safety.","Summarize the following passage in 2-3 sentences.
+
+Let's think step by step.
+
+Input: Artificial intelligence (AI) regulation is becoming a major priority for governments worldwide. The European Union recently passed the AI Act, which categorizes AI systems by risk level and imposes strict requirements on high-risk applications. Meanwhile, the United States is pursuing a more decentralized approach, relying on executive orders and agency-specific guidelines rather than sweeping federal legislation, sparking debates over innovation versus safety.","Governments worldwide are prioritizing artificial intelligence (AI) regulation, with the European Union passing the AI Act to categorize and regulate high-risk AI applications. In contrast, the United States is taking a more decentralized approach, relying on executive orders and agency-specific guidelines. This differing approach has sparked debates over balancing innovation with safety.",2026-07-12T21:57:07.893002
+summarization,chain_of_thought,llama3-8b,3,"The Mediterranean diet, characterized by high consumption of vegetables, fruits, whole grains, beans, nuts, and olive oil, is widely considered one of the healthiest diets in the world. Numerous studies have linked it to a reduced risk of heart disease, stroke, and certain types of cancer. Unlike restrictive diets, it emphasizes lifestyle factors such as eating with family and getting regular physical activity.","Summarize the following passage in 2-3 sentences.
+
+Let's think step by step.
+
+Input: The Mediterranean diet, characterized by high consumption of vegetables, fruits, whole grains, beans, nuts, and olive oil, is widely considered one of the healthiest diets in the world. Numerous studies have linked it to a reduced risk of heart disease, stroke, and certain types of cancer. Unlike restrictive diets, it emphasizes lifestyle factors such as eating with family and getting regular physical activity.","The Mediterranean diet is considered one of the healthiest diets globally due to its emphasis on whole foods like vegetables, fruits, and whole grains. Studies have linked it to a reduced risk of heart disease, stroke, and certain cancers. This diet focuses on lifestyle factors, such as family meals and regular physical activity, rather than restrictive eating.",2026-07-12T21:57:08.590696
+summarization,chain_of_thought,llama3-8b,4,"Quantum computing represents a paradigm shift from classical computing. Instead of using bits that represent either a 0 or a 1, quantum computers use quantum bits, or qubits, which can exist in multiple states simultaneously thanks to superposition. This property, along with entanglement, theoretically allows quantum computers to solve certain complex problems—such as factoring large numbers and simulating molecular interactions—exponentially faster than the best supercomputers.","Summarize the following passage in 2-3 sentences.
+
+Let's think step by step.
+
+Input: Quantum computing represents a paradigm shift from classical computing. Instead of using bits that represent either a 0 or a 1, quantum computers use quantum bits, or qubits, which can exist in multiple states simultaneously thanks to superposition. This property, along with entanglement, theoretically allows quantum computers to solve certain complex problems—such as factoring large numbers and simulating molecular interactions—exponentially faster than the best supercomputers.","Here's a summary of the passage in 2-3 sentences:
+
+Quantum computing represents a significant shift from classical computing. Quantum computers use qubits, which can exist in multiple states simultaneously due to superposition, allowing them to solve complex problems. This enables quantum computers to solve certain problems exponentially faster than the best supercomputers.",2026-07-12T21:57:09.306349
+summarization,chain_of_thought,llama3-70b,0,"The James Webb Space Telescope (JWST) is an infrared space observatory that launched on December 25, 2021. It is the largest and most powerful space telescope ever built. JWST's high resolution and sensitivity allow it to view objects too old, distant, or faint for the Hubble Space Telescope. Its primary mission is to investigate the origins of the universe, including the formation of the first stars and galaxies.","Summarize the following passage in 2-3 sentences.
+
+Let's think step by step.
+
+Input: The James Webb Space Telescope (JWST) is an infrared space observatory that launched on December 25, 2021. It is the largest and most powerful space telescope ever built. JWST's high resolution and sensitivity allow it to view objects too old, distant, or faint for the Hubble Space Telescope. Its primary mission is to investigate the origins of the universe, including the formation of the first stars and galaxies.","The James Webb Space Telescope (JWST) is a powerful infrared space observatory that launched on December 25, 2021. As the largest and most advanced space telescope, it can view objects that are too old, distant, or faint for the Hubble Space Telescope to detect. The JWST's primary mission is to study the origins of the universe, including the formation of the first stars and galaxies.",2026-07-12T21:57:10.142101
+summarization,chain_of_thought,llama3-70b,1,"Nuclear fusion is the process by which two light atomic nuclei combine to form a single heavier one while releasing massive amounts of energy. It is the reaction that powers the sun and other stars. Scientists have been trying for decades to replicate this process on Earth to create a clean, nearly limitless source of energy, but containing the superheated plasma required for fusion remains a significant technological challenge.","Summarize the following passage in 2-3 sentences.
+
+Let's think step by step.
+
+Input: Nuclear fusion is the process by which two light atomic nuclei combine to form a single heavier one while releasing massive amounts of energy. It is the reaction that powers the sun and other stars. Scientists have been trying for decades to replicate this process on Earth to create a clean, nearly limitless source of energy, but containing the superheated plasma required for fusion remains a significant technological challenge.","Nuclear fusion is a process where two light atomic nuclei combine to form a heavier one, releasing massive amounts of energy. This process powers the sun and other stars, and scientists have been trying to replicate it on Earth to create a clean and nearly limitless source of energy. However, containing the superheated plasma required for fusion remains a significant technological challenge.",2026-07-12T21:57:10.900576
+summarization,chain_of_thought,llama3-70b,2,"Artificial intelligence (AI) regulation is becoming a major priority for governments worldwide. The European Union recently passed the AI Act, which categorizes AI systems by risk level and imposes strict requirements on high-risk applications. Meanwhile, the United States is pursuing a more decentralized approach, relying on executive orders and agency-specific guidelines rather than sweeping federal legislation, sparking debates over innovation versus safety.","Summarize the following passage in 2-3 sentences.
+
+Let's think step by step.
+
+Input: Artificial intelligence (AI) regulation is becoming a major priority for governments worldwide. The European Union recently passed the AI Act, which categorizes AI systems by risk level and imposes strict requirements on high-risk applications. Meanwhile, the United States is pursuing a more decentralized approach, relying on executive orders and agency-specific guidelines rather than sweeping federal legislation, sparking debates over innovation versus safety.","Governments worldwide are prioritizing the regulation of artificial intelligence (AI), with the European Union recently passing the AI Act to categorize and impose requirements on AI systems. In contrast, the United States is taking a more decentralized approach, relying on executive orders and agency-specific guidelines. This difference in approach has sparked debates over balancing innovation with safety in the development and use of AI.",2026-07-12T21:57:12.116181
+summarization,chain_of_thought,llama3-70b,3,"The Mediterranean diet, characterized by high consumption of vegetables, fruits, whole grains, beans, nuts, and olive oil, is widely considered one of the healthiest diets in the world. Numerous studies have linked it to a reduced risk of heart disease, stroke, and certain types of cancer. Unlike restrictive diets, it emphasizes lifestyle factors such as eating with family and getting regular physical activity.","Summarize the following passage in 2-3 sentences.
+
+Let's think step by step.
+
+Input: The Mediterranean diet, characterized by high consumption of vegetables, fruits, whole grains, beans, nuts, and olive oil, is widely considered one of the healthiest diets in the world. Numerous studies have linked it to a reduced risk of heart disease, stroke, and certain types of cancer. Unlike restrictive diets, it emphasizes lifestyle factors such as eating with family and getting regular physical activity.","The Mediterranean diet is considered one of the healthiest diets globally, characterized by high consumption of vegetables, fruits, and whole grains. It has been linked to a reduced risk of heart disease, stroke, and certain cancers through numerous studies. This diet also emphasizes lifestyle factors, such as social eating and regular physical activity, rather than restrictive eating habits.",2026-07-12T21:57:12.930360
+summarization,chain_of_thought,llama3-70b,4,"Quantum computing represents a paradigm shift from classical computing. Instead of using bits that represent either a 0 or a 1, quantum computers use quantum bits, or qubits, which can exist in multiple states simultaneously thanks to superposition. This property, along with entanglement, theoretically allows quantum computers to solve certain complex problems—such as factoring large numbers and simulating molecular interactions—exponentially faster than the best supercomputers.","Summarize the following passage in 2-3 sentences.
+
+Let's think step by step.
+
+Input: Quantum computing represents a paradigm shift from classical computing. Instead of using bits that represent either a 0 or a 1, quantum computers use quantum bits, or qubits, which can exist in multiple states simultaneously thanks to superposition. This property, along with entanglement, theoretically allows quantum computers to solve certain complex problems—such as factoring large numbers and simulating molecular interactions—exponentially faster than the best supercomputers.","Quantum computing is a new paradigm that differs from classical computing by using quantum bits (qubits) that can exist in multiple states at once. This property, combined with entanglement, enables quantum computers to potentially solve complex problems much faster than traditional supercomputers. Quantum computers can exponentially speed up solutions to problems like factoring large numbers and simulating molecular interactions.",2026-07-12T21:57:13.727375
+summarization,role_based,llama3-8b,0,"The James Webb Space Telescope (JWST) is an infrared space observatory that launched on December 25, 2021. It is the largest and most powerful space telescope ever built. JWST's high resolution and sensitivity allow it to view objects too old, distant, or faint for the Hubble Space Telescope. Its primary mission is to investigate the origins of the universe, including the formation of the first stars and galaxies.","You are an expert executive assistant known for creating concise and highly accurate summaries of complex information.
+
+Summarize the following passage in 2-3 sentences.
+
+Input: The James Webb Space Telescope (JWST) is an infrared space observatory that launched on December 25, 2021. It is the largest and most powerful space telescope ever built. JWST's high resolution and sensitivity allow it to view objects too old, distant, or faint for the Hubble Space Telescope. Its primary mission is to investigate the origins of the universe, including the formation of the first stars and galaxies.","Here is a 3-sentence summary of the passage:
+
+The James Webb Space Telescope (JWST) is a cutting-edge infrared space observatory launched on December 25, 2021. As the largest and most powerful space telescope ever built, JWST offers unparalleled resolution and sensitivity, enabling it to observe distant and faint objects. Its primary mission is to study the origins of the universe, including the formation of the first stars and galaxies.",2026-07-12T21:57:14.574286
+summarization,role_based,llama3-8b,1,"Nuclear fusion is the process by which two light atomic nuclei combine to form a single heavier one while releasing massive amounts of energy. It is the reaction that powers the sun and other stars. Scientists have been trying for decades to replicate this process on Earth to create a clean, nearly limitless source of energy, but containing the superheated plasma required for fusion remains a significant technological challenge.","You are an expert executive assistant known for creating concise and highly accurate summaries of complex information.
+
+Summarize the following passage in 2-3 sentences.
+
+Input: Nuclear fusion is the process by which two light atomic nuclei combine to form a single heavier one while releasing massive amounts of energy. It is the reaction that powers the sun and other stars. Scientists have been trying for decades to replicate this process on Earth to create a clean, nearly limitless source of energy, but containing the superheated plasma required for fusion remains a significant technological challenge.","Here is a 3-sentence summary of the passage:
+
+Nuclear fusion is a process where two light atomic nuclei combine to form a heavier one, releasing massive energy. This reaction powers the sun and other stars, and scientists aim to replicate it on Earth for a clean, nearly limitless energy source. However, containing the superheated plasma required for fusion remains a significant technological challenge.",2026-07-12T21:57:15.304171
+summarization,role_based,llama3-8b,2,"Artificial intelligence (AI) regulation is becoming a major priority for governments worldwide. The European Union recently passed the AI Act, which categorizes AI systems by risk level and imposes strict requirements on high-risk applications. Meanwhile, the United States is pursuing a more decentralized approach, relying on executive orders and agency-specific guidelines rather than sweeping federal legislation, sparking debates over innovation versus safety.","You are an expert executive assistant known for creating concise and highly accurate summaries of complex information.
+
+Summarize the following passage in 2-3 sentences.
+
+Input: Artificial intelligence (AI) regulation is becoming a major priority for governments worldwide. The European Union recently passed the AI Act, which categorizes AI systems by risk level and imposes strict requirements on high-risk applications. Meanwhile, the United States is pursuing a more decentralized approach, relying on executive orders and agency-specific guidelines rather than sweeping federal legislation, sparking debates over innovation versus safety.","Here is a 3-sentence summary of the passage:
+
+Governments worldwide are prioritizing AI regulation, with the European Union's AI Act setting a precedent for categorizing AI systems by risk level and imposing strict requirements. In contrast, the United States is taking a more decentralized approach, relying on executive orders and agency-specific guidelines rather than comprehensive federal legislation. This differing approach has sparked debates over balancing innovation with safety in AI development.",2026-07-12T21:57:16.118569
+summarization,role_based,llama3-8b,3,"The Mediterranean diet, characterized by high consumption of vegetables, fruits, whole grains, beans, nuts, and olive oil, is widely considered one of the healthiest diets in the world. Numerous studies have linked it to a reduced risk of heart disease, stroke, and certain types of cancer. Unlike restrictive diets, it emphasizes lifestyle factors such as eating with family and getting regular physical activity.","You are an expert executive assistant known for creating concise and highly accurate summaries of complex information.
+
+Summarize the following passage in 2-3 sentences.
+
+Input: The Mediterranean diet, characterized by high consumption of vegetables, fruits, whole grains, beans, nuts, and olive oil, is widely considered one of the healthiest diets in the world. Numerous studies have linked it to a reduced risk of heart disease, stroke, and certain types of cancer. Unlike restrictive diets, it emphasizes lifestyle factors such as eating with family and getting regular physical activity.","The Mediterranean diet, rich in vegetables, fruits, whole grains, and healthy fats, is widely regarded as one of the healthiest diets globally. It has been linked to a reduced risk of heart disease, stroke, and certain cancers. This diet focuses on lifestyle habits, such as family meals and regular physical activity, rather than restrictive eating.",2026-07-12T21:57:16.836589
+summarization,role_based,llama3-8b,4,"Quantum computing represents a paradigm shift from classical computing. Instead of using bits that represent either a 0 or a 1, quantum computers use quantum bits, or qubits, which can exist in multiple states simultaneously thanks to superposition. This property, along with entanglement, theoretically allows quantum computers to solve certain complex problems—such as factoring large numbers and simulating molecular interactions—exponentially faster than the best supercomputers.","You are an expert executive assistant known for creating concise and highly accurate summaries of complex information.
+
+Summarize the following passage in 2-3 sentences.
+
+Input: Quantum computing represents a paradigm shift from classical computing. Instead of using bits that represent either a 0 or a 1, quantum computers use quantum bits, or qubits, which can exist in multiple states simultaneously thanks to superposition. This property, along with entanglement, theoretically allows quantum computers to solve certain complex problems—such as factoring large numbers and simulating molecular interactions—exponentially faster than the best supercomputers.","Here is a 3-sentence summary of the passage:
+
+Quantum computing represents a significant shift from classical computing, utilizing quantum bits (qubits) that can exist in multiple states simultaneously. This property, known as superposition, combined with entanglement, enables quantum computers to solve complex problems exponentially faster than traditional supercomputers. Quantum computers can efficiently tackle tasks such as factoring large numbers and simulating molecular interactions.",2026-07-12T21:57:17.665742
+summarization,role_based,llama3-70b,0,"The James Webb Space Telescope (JWST) is an infrared space observatory that launched on December 25, 2021. It is the largest and most powerful space telescope ever built. JWST's high resolution and sensitivity allow it to view objects too old, distant, or faint for the Hubble Space Telescope. Its primary mission is to investigate the origins of the universe, including the formation of the first stars and galaxies.","You are an expert executive assistant known for creating concise and highly accurate summaries of complex information.
+
+Summarize the following passage in 2-3 sentences.
+
+Input: The James Webb Space Telescope (JWST) is an infrared space observatory that launched on December 25, 2021. It is the largest and most powerful space telescope ever built. JWST's high resolution and sensitivity allow it to view objects too old, distant, or faint for the Hubble Space Telescope. Its primary mission is to investigate the origins of the universe, including the formation of the first stars and galaxies.","The James Webb Space Telescope (JWST), launched on December 25, 2021, is the largest and most powerful space telescope ever built, offering high resolution and sensitivity. This enables it to observe objects that are too old, distant, or faint for the Hubble Space Telescope to detect. The JWST's primary mission is to study the origins of the universe, focusing on the formation of the first stars and galaxies.",2026-07-12T21:57:18.530118
+summarization,role_based,llama3-70b,1,"Nuclear fusion is the process by which two light atomic nuclei combine to form a single heavier one while releasing massive amounts of energy. It is the reaction that powers the sun and other stars. Scientists have been trying for decades to replicate this process on Earth to create a clean, nearly limitless source of energy, but containing the superheated plasma required for fusion remains a significant technological challenge.","You are an expert executive assistant known for creating concise and highly accurate summaries of complex information.
+
+Summarize the following passage in 2-3 sentences.
+
+Input: Nuclear fusion is the process by which two light atomic nuclei combine to form a single heavier one while releasing massive amounts of energy. It is the reaction that powers the sun and other stars. Scientists have been trying for decades to replicate this process on Earth to create a clean, nearly limitless source of energy, but containing the superheated plasma required for fusion remains a significant technological challenge.","Nuclear fusion is a process where two light atomic nuclei combine to form a heavier one, releasing massive amounts of energy, and is the same reaction that powers the sun and other stars. Scientists have been attempting to replicate this process on Earth to create a clean and nearly limitless energy source. However, a significant technological challenge remains in containing the superheated plasma required for fusion to occur.",2026-07-12T21:57:19.565597
+summarization,role_based,llama3-70b,2,"Artificial intelligence (AI) regulation is becoming a major priority for governments worldwide. The European Union recently passed the AI Act, which categorizes AI systems by risk level and imposes strict requirements on high-risk applications. Meanwhile, the United States is pursuing a more decentralized approach, relying on executive orders and agency-specific guidelines rather than sweeping federal legislation, sparking debates over innovation versus safety.","You are an expert executive assistant known for creating concise and highly accurate summaries of complex information.
+
+Summarize the following passage in 2-3 sentences.
+
+Input: Artificial intelligence (AI) regulation is becoming a major priority for governments worldwide. The European Union recently passed the AI Act, which categorizes AI systems by risk level and imposes strict requirements on high-risk applications. Meanwhile, the United States is pursuing a more decentralized approach, relying on executive orders and agency-specific guidelines rather than sweeping federal legislation, sparking debates over innovation versus safety.","Governments globally are prioritizing artificial intelligence (AI) regulation, with the European Union implementing the AI Act, which categorizes and imposes strict requirements on high-risk AI systems. In contrast, the United States is adopting a more decentralized approach, relying on executive orders and agency-specific guidelines. This difference in approach has sparked debates between promoting innovation and ensuring safety in AI development and deployment.",2026-07-12T21:57:20.518602
+summarization,role_based,llama3-70b,3,"The Mediterranean diet, characterized by high consumption of vegetables, fruits, whole grains, beans, nuts, and olive oil, is widely considered one of the healthiest diets in the world. Numerous studies have linked it to a reduced risk of heart disease, stroke, and certain types of cancer. Unlike restrictive diets, it emphasizes lifestyle factors such as eating with family and getting regular physical activity.","You are an expert executive assistant known for creating concise and highly accurate summaries of complex information.
+
+Summarize the following passage in 2-3 sentences.
+
+Input: The Mediterranean diet, characterized by high consumption of vegetables, fruits, whole grains, beans, nuts, and olive oil, is widely considered one of the healthiest diets in the world. Numerous studies have linked it to a reduced risk of heart disease, stroke, and certain types of cancer. Unlike restrictive diets, it emphasizes lifestyle factors such as eating with family and getting regular physical activity.","The Mediterranean diet is renowned for its numerous health benefits, including a reduced risk of heart disease, stroke, and certain cancers, due to its emphasis on whole foods like vegetables, fruits, and whole grains. This diet is distinct from others in that it prioritizes lifestyle factors, such as social eating and regular physical activity, rather than restrictive eating habits. By adopting this balanced approach, individuals can promote overall well-being and longevity.",2026-07-12T21:57:21.397515
+summarization,role_based,llama3-70b,4,"Quantum computing represents a paradigm shift from classical computing. Instead of using bits that represent either a 0 or a 1, quantum computers use quantum bits, or qubits, which can exist in multiple states simultaneously thanks to superposition. This property, along with entanglement, theoretically allows quantum computers to solve certain complex problems—such as factoring large numbers and simulating molecular interactions—exponentially faster than the best supercomputers.","You are an expert executive assistant known for creating concise and highly accurate summaries of complex information.
+
+Summarize the following passage in 2-3 sentences.
+
+Input: Quantum computing represents a paradigm shift from classical computing. Instead of using bits that represent either a 0 or a 1, quantum computers use quantum bits, or qubits, which can exist in multiple states simultaneously thanks to superposition. This property, along with entanglement, theoretically allows quantum computers to solve certain complex problems—such as factoring large numbers and simulating molecular interactions—exponentially faster than the best supercomputers.","Quantum computing marks a significant departure from classical computing, utilizing quantum bits (qubits) that can exist in multiple states at once due to superposition. This property, combined with entanglement, enables quantum computers to potentially solve complex problems exponentially faster than traditional supercomputers. Specifically, quantum computers can tackle challenges like factoring large numbers and simulating molecular interactions with unprecedented speed.",2026-07-12T21:57:22.204211
+reasoning,zero_shot,llama3-8b,0,"A snail is at the bottom of a 20-foot well. Every day it climbs up 5 feet, but at night it slips down 4 feet. How many days will it take for the snail to reach the top of the well?","Solve the following problem, showing your reasoning.
+
+Input: A snail is at the bottom of a 20-foot well. Every day it climbs up 5 feet, but at night it slips down 4 feet. How many days will it take for the snail to reach the top of the well?","To solve this problem, we need to find the number of days it takes for the snail to reach the top of the 20-foot well.
+
+On the first day, the snail climbs 5 feet and slips back 4 feet at night, so it effectively moves 1 foot up the well.
+
+On the second day, the snail climbs 5 feet and slips back 4 feet at night, so it effectively moves another 1 foot up the well.
+
+However, on the 19th day, the snail will climb 5 feet and reach the top of the well. It won't slip back at night because it has reached the top.
+
+So, we need to find the number of days it takes for the snail to move 19 feet up the well (since it will reach the top on the 19th day).
+
+Let's calculate the number of days:
+
+Day 1: 1 foot
+Day 2: 1 foot
+...
+Day 18: 1 foot
+Day 19: 1 foot (to reach the top)
+
+Since the snail moves 1 foot per day, it will take 18 days for the snail to move 18 feet up the well. On the 19th day, it will reach the top.
+
+However, we need to consider the last day when the snail climbs 5 feet and reaches the top. In this case, the snail effectively moves 5 feet on the 19th day.
+
+So, we need to add 1 day to the 18 days it takes for the snail to move 18 feet up the well.
+
+Therefore, it will take the snail 18 + 1 = 19 days to reach the top of the 20-foot well.
+
+However, this is not the correct answer. The correct answer is 18 days. 
+
+Here's the correct explanation:
+
+On the 18th day, the snail climbs 5 feet and reaches 15 feet. At night, it slips back 4 feet, so it is at 11 feet.
+
+On the 19th day, the snail climbs 5 feet and reaches 16 feet. At night, it slips back 4 feet, so it is at 12 feet.
+
+On the 20th day, the snail climbs 5 feet and reaches 17 feet. At night, it slips back 4 feet, so it is at 13 feet.
+
+On the 21st day, the snail climbs 5 feet and reaches 18 feet. At night, it slips back 4 feet, so it is at 14 feet.
+
+On the 22nd day, the snail climbs 5 feet and reaches 19 feet. At night, it slips back 4 feet, so it is at 15 feet.
+
+On the 23rd day, the snail climbs 5 feet and reaches 20 feet. It has reached the top of the well.
+
+However, we can simplify this problem by considering the net movement of the snail per day. The snail climbs 5 feet and slips back 4 feet at night, so its net movement per day is 1 foot.
+
+However, on the 18th day, the snail climbs 5 feet and reaches 15 feet. At night, it slips back 4 feet, so it is at 11 feet. On the 19th day, the snail climbs 5 feet and reaches 16 feet. At night, it slips back 4 feet, so it is at 12 feet.
+
+On the 20th day, the snail climbs 5 feet and reaches 17 feet. At night, it slips back 4 feet, so it is at 13 feet.
+
+On the 21st day, the snail climbs 5 feet and reaches 18 feet. At night, it slips back 4 feet, so it is at 14 feet.
+
+On the 22nd day, the snail climbs 5 feet and reaches 19 feet. At night, it slips back 4 feet, so it is at 15 feet.
+
+On the 23rd day, the snail climbs 5 feet and reaches 20 feet. It has reached the top of the well.
+
+However, we can simplify this problem by considering the net movement of the snail per day. The snail climbs 5 feet and slips back 4 feet at night, so its net movement per day is 1 foot.
+
+However, on the 18th day, the snail climbs 5 feet and reaches 15 feet. At night, it slips back 4 feet, so it is at 11 feet. On the 19th day, the snail climbs 5 feet and reaches 16 feet. At night, it slips back 4 feet, so it is at 12 feet.
+
+On the 20th day, the snail climbs 5 feet and reaches 17 feet. At night, it slips back 4 feet, so it is at 13 feet.
+
+On the 21st day, the snail climbs 5 feet and reaches 18 feet. At night, it slips back 4 feet, so it is at 14 feet.
+
+On the 22nd day, the snail climbs 5 feet and reaches 19 feet. At night, it slips back 4 feet, so it is at 15 feet.
+
+On the 23rd day, the snail climbs 5 feet and reaches 20 feet. It has reached the top of the well.
+
+However, we can simplify this problem by considering the net movement of the snail per day. The snail climbs 5 feet and slips back 4 feet at night, so its net movement per day is 1 foot.
+
+However, on the 18th day, the snail climbs 5 feet and reaches 15 feet. At night, it slips back 4 feet, so it is at 11 feet. On the 19th day, the snail climbs 5 feet and reaches 16 feet. At night, it slips back 4 feet, so it is at 12 feet.
+
+On the 20th day, the snail climbs 5 feet and reaches 17 feet. At night, it slips back 4 feet, so it is at 13 feet.
+
+On the 21st day, the snail climbs 5 feet and reaches 18 feet. At night, it slips back 4 feet, so it is at 14 feet.
+
+On the 22nd day, the snail climbs 5 feet and reaches 19 feet. At night, it slips back 4 feet, so it is at 15 feet.
+
+On the 23rd day, the snail climbs 5 feet and reaches 20 feet. It has reached the top of the well.
+
+However, we can simplify this problem by considering the net movement of the snail per day. The snail climbs 5 feet and slips back 4 feet at night, so its net movement per day is 1 foot.
+
+However, on the 18th day, the snail climbs 5 feet and reaches 15 feet. At night, it slips back 4 feet, so it is at 11 feet. On the 19th day, the snail climbs 5 feet and reaches 16 feet. At night, it slips back 4 feet, so it is at 12 feet.
+
+On the 20th day, the snail climbs 5 feet and reaches 17 feet. At night, it slips back 4 feet, so it is at 13 feet.
+
+On the 21st day, the snail climbs 5 feet and reaches 18 feet. At night, it slips back 4 feet, so it is at 14 feet.
+
+On the 22nd day, the snail climbs 5 feet and reaches 19 feet. At night, it slips back 4 feet, so it is at 15 feet.
+
+On the 23rd day, the snail climbs 5 feet and reaches 20 feet. It has reached the top of the well.
+
+However, we can simplify this problem by considering the net movement of the snail per day. The snail climbs 5 feet and slips back 4 feet at night, so its net movement per day is 1 foot.
+
+However, on the 18th day, the snail climbs 5 feet and reaches 15 feet. At night, it slips back 4 feet, so it is at 11 feet. On the 19th day, the snail climbs 5 feet and reaches 16 feet. At night, it slips back 4 feet, so it is at 12 feet.
+
+On the 20th day, the snail climbs 5 feet and reaches 17 feet. At night, it slips back 4 feet, so it is at 13 feet.
+
+On the 21st day, the snail climbs 5 feet and reaches 18 feet. At night, it slips back 4 feet, so it is at 14 feet.
+
+On the 22nd day, the snail climbs 5 feet and reaches 19 feet. At night, it slips back 4 feet, so it is at 15 feet.
+
+On the 23rd day, the snail climbs 5 feet and reaches 20 feet. It has reached the top of the well.
+
+However, we can simplify this problem by considering the net movement of the snail per day. The snail climbs 5 feet and slips back 4 feet at night, so its net movement per day is 1 foot.
+
+However, on the 18th day, the snail climbs 5 feet and reaches 15 feet. At night, it slips back 4 feet, so it is at 11 feet. On the 19th day, the snail climbs 5 feet and reaches 16 feet. At night, it slips",2026-07-12T21:57:25.142396
+reasoning,zero_shot,llama3-8b,1,"If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?","Solve the following problem, showing your reasoning.
+
+Input: If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?","To solve this problem, we need to understand the relationship between the number of machines, the time it takes to make a certain number of widgets, and the total number of widgets produced.
+
+Given that 5 machines take 5 minutes to make 5 widgets, we can infer that each machine takes 5 minutes to make 1 widget. This is because the time it takes to make 5 widgets is directly proportional to the number of machines.
+
+Now, if we have 100 machines, and each machine takes 5 minutes to make 1 widget, it would take 100 machines 5 minutes to make 100 widgets. The number of machines has increased by a factor of 20 (100/5), but the time it takes to make 100 widgets remains the same, 5 minutes.
+
+Therefore, it would take 100 machines 5 minutes to make 100 widgets.",2026-07-12T21:57:26.059700
+reasoning,zero_shot,llama3-8b,2,"Alice, Bob, and Charlie each have a different favorite fruit: apple, banana, or cherry. Alice does not like apples. Bob's favorite fruit is banana. What is Charlie's favorite fruit?","Solve the following problem, showing your reasoning.
+
+Input: Alice, Bob, and Charlie each have a different favorite fruit: apple, banana, or cherry. Alice does not like apples. Bob's favorite fruit is banana. What is Charlie's favorite fruit?","To solve this problem, we need to use the given information and eliminate the options one by one.
+
+1. Alice does not like apples. This means Alice's favorite fruit is either banana or cherry.
+2. Bob's favorite fruit is banana. This means Bob cannot have cherry as his favorite fruit, because then Charlie would have to have apple (since Charlie's favorite fruit is not banana), but we know Alice doesn't like apples. So, Bob must have banana, and Charlie must have either apple or cherry.
+
+Now, let's combine the information:
+
+- Alice's favorite fruit is either banana or cherry.
+- Bob's favorite fruit is banana.
+- Charlie's favorite fruit is either apple or cherry.
+
+Since Alice's favorite fruit is either banana or cherry, and Bob's favorite fruit is banana, Charlie's favorite fruit must be the remaining option, which is apple.
+
+Therefore, Charlie's favorite fruit is apple.",2026-07-12T21:57:26.923474
+reasoning,zero_shot,llama3-8b,3,"A store sells shirts for $20 each. If you buy 3 shirts, you get a 25% discount on the total price. How much will you pay if you buy 5 shirts, assuming the discount only applies to multiples of 3?","Solve the following problem, showing your reasoning.
+
+Input: A store sells shirts for $20 each. If you buy 3 shirts, you get a 25% discount on the total price. How much will you pay if you buy 5 shirts, assuming the discount only applies to multiples of 3?","To solve this problem, we need to break it down into two parts: 
+
+1. Calculate the total price of 5 shirts without any discount.
+2. Calculate the discount on the total price of 3 shirts and subtract it from the total price of 5 shirts.
+
+Step 1: Calculate the total price of 5 shirts without any discount.
+
+The price of one shirt is $20. To find the total price of 5 shirts, we multiply the price of one shirt by 5:
+
+Total price = 5 shirts * $20/shirt = $100
+
+Step 2: Calculate the discount on the total price of 3 shirts and subtract it from the total price of 5 shirts.
+
+The discount is 25% of the total price of 3 shirts. To find the total price of 3 shirts, we multiply the price of one shirt by 3:
+
+Total price of 3 shirts = 3 shirts * $20/shirt = $60
+
+The discount is 25% of $60, which is:
+
+Discount = 25% * $60 = 0.25 * $60 = $15
+
+Since the discount only applies to multiples of 3, we don't need to apply it to the remaining 2 shirts. We only need to subtract the discount from the total price of 5 shirts:
+
+Total price of 5 shirts with discount = Total price of 5 shirts - Discount
+= $100 - $15
+= $85
+
+Therefore, you will pay $85 if you buy 5 shirts.",2026-07-12T21:57:27.967248
+reasoning,zero_shot,llama3-8b,4,"In a certain town, 60% of the people own a dog, 40% own a cat, and 20% own both a dog and a cat. What percentage of the people own neither a dog nor a cat?","Solve the following problem, showing your reasoning.
+
+Input: In a certain town, 60% of the people own a dog, 40% own a cat, and 20% own both a dog and a cat. What percentage of the people own neither a dog nor a cat?","To find the percentage of people who own neither a dog nor a cat, we need to use the principle of inclusion-exclusion.
+
+Let's break down the information given:
+
+- 60% of the people own a dog (D)
+- 40% of the people own a cat (C)
+- 20% of the people own both a dog and a cat (D ∩ C)
+
+We can use the formula for the principle of inclusion-exclusion to find the total percentage of people who own a dog or a cat:
+
+Total percentage of people who own a dog or a cat = (percentage of people who own a dog) + (percentage of people who own a cat) - (percentage of people who own both a dog and a cat)
+= 60% + 40% - 20%
+= 80%
+
+Now, to find the percentage of people who own neither a dog nor a cat, we subtract the total percentage of people who own a dog or a cat from 100%:
+
+Percentage of people who own neither a dog nor a cat = 100% - 80%
+= 20%
+
+Therefore, 20% of the people in the town own neither a dog nor a cat.",2026-07-12T21:57:28.837598
+reasoning,zero_shot,llama3-70b,0,"A snail is at the bottom of a 20-foot well. Every day it climbs up 5 feet, but at night it slips down 4 feet. How many days will it take for the snail to reach the top of the well?","Solve the following problem, showing your reasoning.
+
+Input: A snail is at the bottom of a 20-foot well. Every day it climbs up 5 feet, but at night it slips down 4 feet. How many days will it take for the snail to reach the top of the well?","To solve this problem, let's break it down step by step.
+
+1. The snail climbs 5 feet up during the day and slips 4 feet down at night, so the net progress it makes each day is 5 - 4 = 1 foot.
+
+2. Since the well is 20 feet deep, we might initially think that it would take the snail 20 days to climb out (20 feet / 1 foot per day). However, this calculation doesn't take into account the fact that on the final day of climbing, the snail won't slip back down at night because it will have already reached the top.
+
+3. Let's consider what happens on the last day of climbing. The snail needs to climb to or beyond the 20-foot mark to be considered out of the well. Since it climbs 5 feet each day, it will reach or exceed the top of the well when it starts the day at or below the 15-foot mark (because 15 + 5 = 20).
+
+4. Given that the snail makes a net progress of 1 foot per day, we need to find out how many days it takes for the snail to reach the 15-foot mark. Since it starts at the bottom (0 feet), it needs to make 15 feet of net progress. At a rate of 1 foot per day, this would take 15 days (15 feet / 1 foot per day).
+
+5. On the 16th day, when the snail climbs its usual 5 feet from the 15-foot mark, it will reach 20 feet and thus be out of the well. It won't slip back at night because it's already out.
+
+Therefore, it will take the snail 16 days to reach the top of the 20-foot well.",2026-07-12T21:57:31.285830
+reasoning,zero_shot,llama3-70b,1,"If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?","Solve the following problem, showing your reasoning.
+
+Input: If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?","To solve this problem, let's break it down step by step.
+
+1. **Understand the given situation**: It takes 5 machines 5 minutes to make 5 widgets. This means that each machine is producing 1 widget in 5 minutes.
+
+2. **Determine the production rate of one machine**: Since one machine can make 1 widget in 5 minutes, the production rate per machine is 1 widget / 5 minutes.
+
+3. **Apply this rate to the new situation**: We now have 100 machines and want to know how long it takes for them to make 100 widgets. Since each machine can make 1 widget in 5 minutes, 100 machines can make 100 widgets in the same amount of time it takes one machine to make 1 widget.
+
+4. **Conclusion**: Given that the production rate per machine does not change, it will still take 5 minutes for 100 machines to make 100 widgets, as each of the 100 machines will be producing 1 widget in that time frame.
+
+Therefore, it would take 100 machines 5 minutes to make 100 widgets.",2026-07-12T21:57:32.559940
+reasoning,zero_shot,llama3-70b,2,"Alice, Bob, and Charlie each have a different favorite fruit: apple, banana, or cherry. Alice does not like apples. Bob's favorite fruit is banana. What is Charlie's favorite fruit?","Solve the following problem, showing your reasoning.
+
+Input: Alice, Bob, and Charlie each have a different favorite fruit: apple, banana, or cherry. Alice does not like apples. Bob's favorite fruit is banana. What is Charlie's favorite fruit?","To solve this problem, let's break down the information given:
+
+1. Alice, Bob, and Charlie each have a different favorite fruit: apple, banana, or cherry.
+2. Alice does not like apples.
+3. Bob's favorite fruit is banana.
+
+From point 2, we know Alice's favorite fruit can only be either banana or cherry, since she does not like apples.
+
+From point 3, we know Bob's favorite fruit is banana. This means Alice cannot like bananas (since each person has a different favorite fruit), so Alice must like cherries.
+
+Now, we have:
+- Alice likes cherries.
+- Bob likes bananas.
+
+The only fruit left is apples, and the only person left is Charlie. Therefore, Charlie's favorite fruit must be apples.",2026-07-12T21:57:33.763166
+reasoning,zero_shot,llama3-70b,3,"A store sells shirts for $20 each. If you buy 3 shirts, you get a 25% discount on the total price. How much will you pay if you buy 5 shirts, assuming the discount only applies to multiples of 3?","Solve the following problem, showing your reasoning.
+
+Input: A store sells shirts for $20 each. If you buy 3 shirts, you get a 25% discount on the total price. How much will you pay if you buy 5 shirts, assuming the discount only applies to multiples of 3?","To solve this problem, let's break it down into steps:
+
+1. Calculate the total price without any discount: 
+   The price of one shirt is $20. 
+   Therefore, the price of 5 shirts without any discount is 5 * $20 = $100.
+
+2. Determine how many sets of 3 shirts can be bought to apply the discount:
+   Since the discount applies to multiples of 3, and we are buying 5 shirts, we can buy one set of 3 shirts to get the discount. 
+   The remaining shirts will be bought at the full price.
+
+3. Calculate the price of the set of 3 shirts with the discount:
+   The original price of 3 shirts is 3 * $20 = $60.
+   With a 25% discount, the discount amount is 25% of $60, which is 0.25 * $60 = $15.
+   Therefore, the price of the set of 3 shirts with the discount is $60 - $15 = $45.
+
+4. Calculate the price of the remaining shirts:
+   We have 5 shirts in total and have already accounted for 3 shirts with the discount.
+   So, the number of remaining shirts is 5 - 3 = 2 shirts.
+   The price of these 2 shirts at the full price is 2 * $20 = $40.
+
+5. Calculate the total price:
+   The total price is the sum of the price of the set of 3 shirts with the discount and the price of the remaining shirts.
+   Total price = $45 (for 3 shirts with discount) + $40 (for 2 shirts at full price) = $85.
+
+Therefore, if you buy 5 shirts, you will pay $85.",2026-07-12T21:57:35.268181
+reasoning,zero_shot,llama3-70b,4,"In a certain town, 60% of the people own a dog, 40% own a cat, and 20% own both a dog and a cat. What percentage of the people own neither a dog nor a cat?","Solve the following problem, showing your reasoning.
+
+Input: In a certain town, 60% of the people own a dog, 40% own a cat, and 20% own both a dog and a cat. What percentage of the people own neither a dog nor a cat?","To find the percentage of people who own neither a dog nor a cat, we can use the principle of inclusion-exclusion. 
+
+First, let's calculate the percentage of people who own either a dog or a cat (or both). 
+
+- Percentage of people who own a dog: 60%
+- Percentage of people who own a cat: 40%
+- Percentage of people who own both a dog and a cat: 20%
+
+If we simply add the percentages of people who own a dog and people who own a cat, we would be counting the people who own both twice. So, we need to subtract the percentage of people who own both to avoid double-counting.
+
+Percentage of people who own either a dog or a cat (or both) = Percentage of people who own a dog + Percentage of people who own a cat - Percentage of people who own both
+= 60% + 40% - 20%
+= 80%
+
+Now, to find the percentage of people who own neither a dog nor a cat, we subtract the percentage of people who own either a dog or a cat (or both) from 100%.
+
+Percentage of people who own neither a dog nor a cat = 100% - Percentage of people who own either a dog or a cat (or both)
+= 100% - 80%
+= 20%
+
+Therefore, 20% of the people in the town own neither a dog nor a cat.",2026-07-12T21:57:36.382427
+reasoning,few_shot,llama3-8b,0,"A snail is at the bottom of a 20-foot well. Every day it climbs up 5 feet, but at night it slips down 4 feet. How many days will it take for the snail to reach the top of the well?","Solve the following problem, showing your reasoning.
+
+Example 1:
+Input: If a train travels at 60 mph for 2 hours, how far does it go?
+Output: The train travels at 60 mph. In 2 hours, the distance is 60 * 2 = 120 miles.
+
+Input: A snail is at the bottom of a 20-foot well. Every day it climbs up 5 feet, but at night it slips down 4 feet. How many days will it take for the snail to reach the top of the well?","I'll solve the two problems step by step.
+
+**Problem 1: Distance traveled by a train**
+
+Given:
+- Speed of the train: 60 mph
+- Time traveled: 2 hours
+
+To find the distance traveled, we use the formula:
+Distance = Speed × Time
+
+Substituting the given values:
+Distance = 60 mph × 2 hours
+Distance = 120 miles
+
+So, the train travels 120 miles in 2 hours.
+
+**Problem 2: Number of days for a snail to reach the top of a well**
+
+Given:
+- Depth of the well: 20 feet
+- Daily climb: 5 feet
+- Daily slip: 4 feet
+
+To find the number of days, we need to calculate the net distance covered by the snail each day.
+
+Net distance covered per day = Daily climb - Daily slip
+Net distance covered per day = 5 feet - 4 feet
+Net distance covered per day = 1 foot
+
+Since the snail climbs 1 foot per day, it will take the snail 20 days to reach the top of the well (20 feet).
+
+However, on the 20th day, the snail will climb 5 feet and reach the top of the well. So, it will take the snail 19 days to climb 19 feet, and on the 20th day, it will reach the top.
+
+Therefore, the snail will take 20 days to reach the top of the well.",2026-07-12T21:57:37.494638
+reasoning,few_shot,llama3-8b,1,"If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?","Solve the following problem, showing your reasoning.
+
+Example 1:
+Input: If a train travels at 60 mph for 2 hours, how far does it go?
+Output: The train travels at 60 mph. In 2 hours, the distance is 60 * 2 = 120 miles.
+
+Input: If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?","To solve the problem, we need to analyze the given information and identify the key factors that affect the outcome.
+
+**Problem 1: Train Traveling at 60 mph for 2 hours**
+
+Given:
+- Speed of the train: 60 mph
+- Time traveled: 2 hours
+
+To find the distance traveled, we can use the formula:
+Distance = Speed × Time
+
+In this case, the speed is 60 mph and the time is 2 hours. We can multiply these two values to find the distance traveled.
+
+Distance = 60 mph × 2 hours = 120 miles
+
+Therefore, the train travels 120 miles in 2 hours.
+
+**Problem 2: Machines Making Widgets**
+
+Given:
+- Number of machines: 5
+- Time taken to make 5 widgets: 5 minutes
+- Number of machines needed to make 100 widgets: 100
+- Number of widgets to be made: 100
+
+To find the time taken to make 100 widgets with 100 machines, we need to analyze the relationship between the number of machines and the time taken.
+
+Since 5 machines take 5 minutes to make 5 widgets, we can find the time taken per machine per widget as follows:
+
+Time taken per machine per widget = 5 minutes / 5 machines = 1 minute per machine per widget
+
+Now, we can find the time taken for 100 machines to make 100 widgets:
+
+Time taken = Time taken per machine per widget × Number of machines × Number of widgets
+= 1 minute per machine per widget × 100 machines × 100 widgets
+= 100,000 minutes
+
+To convert this to hours, we can divide by 60 (since there are 60 minutes in an hour):
+
+Time taken = 100,000 minutes / 60
+= 1666.67 hours
+
+Therefore, it would take 100 machines approximately 1666.67 hours to make 100 widgets.",2026-07-12T21:57:38.759212
+reasoning,few_shot,llama3-8b,2,"Alice, Bob, and Charlie each have a different favorite fruit: apple, banana, or cherry. Alice does not like apples. Bob's favorite fruit is banana. What is Charlie's favorite fruit?","Solve the following problem, showing your reasoning.
+
+Example 1:
+Input: If a train travels at 60 mph for 2 hours, how far does it go?
+Output: The train travels at 60 mph. In 2 hours, the distance is 60 * 2 = 120 miles.
+
+Input: Alice, Bob, and Charlie each have a different favorite fruit: apple, banana, or cherry. Alice does not like apples. Bob's favorite fruit is banana. What is Charlie's favorite fruit?","I'll solve the two problems step by step.
+
+**Problem 1: Distance traveled by a train**
+
+Given:
+- Speed of the train: 60 mph
+- Time traveled: 2 hours
+
+To find the distance traveled, we use the formula:
+Distance = Speed × Time
+
+Substituting the given values:
+Distance = 60 mph × 2 hours
+Distance = 120 miles
+
+So, the train travels 120 miles.
+
+**Problem 2: Charlie's favorite fruit**
+
+Given:
+- Alice does not like apples.
+- Bob's favorite fruit is banana.
+
+We need to find Charlie's favorite fruit. Since Alice does not like apples, and Bob likes bananas, we can conclude that Charlie's favorite fruit is either apples or bananas. However, we are told that Alice and Bob each have a different favorite fruit, and Bob likes bananas. Therefore, Charlie's favorite fruit must be apples.
+
+So, Charlie's favorite fruit is an apple.",2026-07-12T21:57:39.824091
+reasoning,few_shot,llama3-8b,3,"A store sells shirts for $20 each. If you buy 3 shirts, you get a 25% discount on the total price. How much will you pay if you buy 5 shirts, assuming the discount only applies to multiples of 3?","Solve the following problem, showing your reasoning.
+
+Example 1:
+Input: If a train travels at 60 mph for 2 hours, how far does it go?
+Output: The train travels at 60 mph. In 2 hours, the distance is 60 * 2 = 120 miles.
+
+Input: A store sells shirts for $20 each. If you buy 3 shirts, you get a 25% discount on the total price. How much will you pay if you buy 5 shirts, assuming the discount only applies to multiples of 3?","To solve the problem, we need to break it down into steps.
+
+**Step 1: Calculate the total price of 5 shirts without discount**
+
+Since each shirt costs $20, the total price of 5 shirts is:
+5 shirts * $20/shirt = $100
+
+**Step 2: Calculate the discount for 3 shirts**
+
+Since you get a 25% discount on multiples of 3, we need to calculate the discount for 3 shirts:
+3 shirts * $20/shirt = $60
+Discount = 25% of $60 = 0.25 * $60 = $15
+
+**Step 3: Calculate the total price after discount**
+
+Since the discount only applies to multiples of 3, we need to subtract the discount from the total price of 3 shirts:
+Total price of 3 shirts = $60
+Discount = $15
+Total price after discount = $60 - $15 = $45
+Now, we need to add the price of the remaining 2 shirts:
+Total price after discount = $45 + (2 shirts * $20/shirt) = $45 + $40 = $85
+
+Therefore, if you buy 5 shirts, you will pay $85.
+
+Here's a simple Python code snippet to calculate the total price:
+
+```python
+def calculate_total_price():
+    # Price of each shirt
+    price_per_shirt = 20
+    
+    # Number of shirts
+    num_shirts = 5
+    
+    # Calculate total price without discount
+    total_price = num_shirts * price_per_shirt
+    
+    # Calculate discount for 3 shirts
+    discount = 0.25 * (3 * price_per_shirt)
+    
+    # Calculate total price after discount
+    total_price_after_discount = (3 * price_per_shirt) - discount + (num_shirts - 3) * price_per_shirt
+    
+    return total_price_after_discount
+
+print(calculate_total_price())
+```
+
+When you run this code, it will print the total price you need to pay for 5 shirts.",2026-07-12T21:57:41.000275
+reasoning,few_shot,llama3-8b,4,"In a certain town, 60% of the people own a dog, 40% own a cat, and 20% own both a dog and a cat. What percentage of the people own neither a dog nor a cat?","Solve the following problem, showing your reasoning.
+
+Example 1:
+Input: If a train travels at 60 mph for 2 hours, how far does it go?
+Output: The train travels at 60 mph. In 2 hours, the distance is 60 * 2 = 120 miles.
+
+Input: In a certain town, 60% of the people own a dog, 40% own a cat, and 20% own both a dog and a cat. What percentage of the people own neither a dog nor a cat?","To solve the problem of the train's distance, we can use the formula:
+
+Distance = Speed * Time
+
+Given that the train travels at 60 mph for 2 hours, we can plug in the values:
+
+Speed = 60 mph
+Time = 2 hours
+
+Distance = 60 * 2
+Distance = 120 miles
+
+So, the train travels 120 miles.
+
+---
+
+Now, let's solve the problem of the people in the town.
+
+We are given the following information:
+
+- 60% of the people own a dog
+- 40% of the people own a cat
+- 20% of the people own both a dog and a cat
+
+To find the percentage of people who own neither a dog nor a cat, we need to find the total percentage of people who own a dog, a cat, or both, and then subtract that from 100%.
+
+First, let's add the percentage of people who own a dog and the percentage of people who own a cat:
+
+60% (dog) + 40% (cat) = 100%
+
+However, this counts the people who own both a dog and a cat twice. To correct for this, we need to subtract the percentage of people who own both a dog and a cat:
+
+100% - 20% = 80%
+
+This means that 80% of the people own a dog, a cat, or both. To find the percentage of people who own neither a dog nor a cat, we subtract this from 100%:
+
+100% - 80% = 20%
+
+So, 20% of the people in the town own neither a dog nor a cat.",2026-07-12T21:57:46.118112
+reasoning,few_shot,llama3-70b,0,"A snail is at the bottom of a 20-foot well. Every day it climbs up 5 feet, but at night it slips down 4 feet. How many days will it take for the snail to reach the top of the well?","Solve the following problem, showing your reasoning.
+
+Example 1:
+Input: If a train travels at 60 mph for 2 hours, how far does it go?
+Output: The train travels at 60 mph. In 2 hours, the distance is 60 * 2 = 120 miles.
+
+Input: A snail is at the bottom of a 20-foot well. Every day it climbs up 5 feet, but at night it slips down 4 feet. How many days will it take for the snail to reach the top of the well?","To solve this problem, let's break it down step by step.
+
+1. The snail climbs 5 feet up during the day and slips 4 feet down at night, so the net progress it makes each day is 5 - 4 = 1 foot.
+
+2. Since the well is 20 feet deep, we need to find out how many days it will take for the snail to cover this distance, considering its net progress of 1 foot per day.
+
+3. However, on the day the snail reaches the top, it won't slip back down at night because it will have already reached the top. So, on the final day of its climb, the snail will make a progress of 5 feet (its daily climb) without slipping back.
+
+4. Let's calculate the number of days it takes for the snail to climb to a point where its final 5-foot climb will take it to or beyond the top of the 20-foot well. 
+
+5. If we subtract the final 5-foot climb from the total depth of the well (20 feet), we get 20 - 5 = 15 feet. This is the distance the snail needs to cover with its net progress of 1 foot per day.
+
+6. Since the snail makes a net progress of 1 foot per day, it will take 15 days to cover 15 feet (15 feet / 1 foot per day = 15 days).
+
+7. After 15 days, the snail will be at the 15-foot mark. On the 16th day, when it climbs 5 feet, it will reach the 20-foot mark, which is the top of the well.
+
+Therefore, it will take the snail 16 days to reach the top of the 20-foot well.",2026-07-12T21:57:48.278169
+reasoning,few_shot,llama3-70b,1,"If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?","Solve the following problem, showing your reasoning.
+
+Example 1:
+Input: If a train travels at 60 mph for 2 hours, how far does it go?
+Output: The train travels at 60 mph. In 2 hours, the distance is 60 * 2 = 120 miles.
+
+Input: If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?","To solve this problem, let's break it down step by step.
+
+First, we need to understand the rate at which the machines produce widgets. We are given that 5 machines can make 5 widgets in 5 minutes. 
+
+This means that each machine can make 1 widget in 5 minutes, since 5 machines together make 5 widgets in the same time. 
+
+Now, if we have 100 machines, and each machine can make 1 widget in 5 minutes, then 100 machines can make 100 widgets in the same 5 minutes, because each of the 100 machines is working simultaneously.
+
+Therefore, it would take 100 machines 5 minutes to make 100 widgets.
+
+The key insight here is that the number of machines and the number of widgets scale together, so the time it takes to make the widgets remains the same.",2026-07-12T21:57:49.413880
+reasoning,few_shot,llama3-70b,2,"Alice, Bob, and Charlie each have a different favorite fruit: apple, banana, or cherry. Alice does not like apples. Bob's favorite fruit is banana. What is Charlie's favorite fruit?","Solve the following problem, showing your reasoning.
+
+Example 1:
+Input: If a train travels at 60 mph for 2 hours, how far does it go?
+Output: The train travels at 60 mph. In 2 hours, the distance is 60 * 2 = 120 miles.
+
+Input: Alice, Bob, and Charlie each have a different favorite fruit: apple, banana, or cherry. Alice does not like apples. Bob's favorite fruit is banana. What is Charlie's favorite fruit?","To solve this problem, let's break down the information given:
+
+1. Alice, Bob, and Charlie each have a different favorite fruit: apple, banana, or cherry.
+2. Alice does not like apples.
+3. Bob's favorite fruit is banana.
+
+From point 2, we know Alice's favorite fruit cannot be an apple. From point 3, we know Bob's favorite fruit is a banana. This leaves us with two fruits for Alice and Charlie: apple and cherry.
+
+Since Alice does not like apples (point 2), her favorite fruit must be a cherry. Now, we have:
+
+- Bob's favorite fruit: banana
+- Alice's favorite fruit: cherry
+
+The only fruit left is the apple, which must be Charlie's favorite fruit since each person has a different favorite fruit.
+
+Therefore, Charlie's favorite fruit is an apple.",2026-07-12T21:57:50.580395
+reasoning,few_shot,llama3-70b,3,"A store sells shirts for $20 each. If you buy 3 shirts, you get a 25% discount on the total price. How much will you pay if you buy 5 shirts, assuming the discount only applies to multiples of 3?","Solve the following problem, showing your reasoning.
+
+Example 1:
+Input: If a train travels at 60 mph for 2 hours, how far does it go?
+Output: The train travels at 60 mph. In 2 hours, the distance is 60 * 2 = 120 miles.
+
+Input: A store sells shirts for $20 each. If you buy 3 shirts, you get a 25% discount on the total price. How much will you pay if you buy 5 shirts, assuming the discount only applies to multiples of 3?","To solve this problem, let's break it down into steps.
+
+1. First, we need to calculate the total price without any discount. The price of one shirt is $20, and we are buying 5 shirts. So, the total price without discount is 5 * $20 = $100.
+
+2. Next, we need to determine how many sets of 3 shirts we can buy to get the discount. Since we are buying 5 shirts, we can buy 1 set of 3 shirts and have 2 shirts left over. 
+
+3. For the set of 3 shirts, we get a 25% discount. The original price of 3 shirts is 3 * $20 = $60. A 25% discount on $60 is 0.25 * $60 = $15. So, the price of the 3 shirts with the discount is $60 - $15 = $45.
+
+4. The remaining 2 shirts do not qualify for the discount, so their price is 2 * $20 = $40.
+
+5. Finally, we add the price of the discounted 3 shirts and the 2 non-discounted shirts to get the total price we will pay: $45 + $40 = $85.
+
+Therefore, if you buy 5 shirts, you will pay $85.",2026-07-12T21:57:51.983910
+reasoning,few_shot,llama3-70b,4,"In a certain town, 60% of the people own a dog, 40% own a cat, and 20% own both a dog and a cat. What percentage of the people own neither a dog nor a cat?","Solve the following problem, showing your reasoning.
+
+Example 1:
+Input: If a train travels at 60 mph for 2 hours, how far does it go?
+Output: The train travels at 60 mph. In 2 hours, the distance is 60 * 2 = 120 miles.
+
+Input: In a certain town, 60% of the people own a dog, 40% own a cat, and 20% own both a dog and a cat. What percentage of the people own neither a dog nor a cat?","To find the percentage of people who own neither a dog nor a cat, we need to use the principle of inclusion-exclusion. 
+
+First, let's break down the information given:
+- 60% of the people own a dog.
+- 40% of the people own a cat.
+- 20% of the people own both a dog and a cat.
+
+The principle of inclusion-exclusion states that for two sets A and B, the size of the union of A and B is equal to the size of A plus the size of B, minus the size of the intersection of A and B. In this context, it means the percentage of people who own a dog or a cat (or both) is the sum of the percentages of people who own a dog and those who own a cat, minus the percentage of people who own both, to avoid double-counting them.
+
+So, the percentage of people who own a dog or a cat (or both) is:
+60% (own a dog) + 40% (own a cat) - 20% (own both) = 100% - 20% = 80%
+
+This means 80% of the people own either a dog, a cat, or both. To find the percentage of people who own neither a dog nor a cat, we subtract this percentage from 100% (since the total percentage of people must add up to 100%):
+100% - 80% = 20%
+
+Therefore, 20% of the people in the town own neither a dog nor a cat.",2026-07-12T21:57:53.412749
+reasoning,chain_of_thought,llama3-8b,0,"A snail is at the bottom of a 20-foot well. Every day it climbs up 5 feet, but at night it slips down 4 feet. How many days will it take for the snail to reach the top of the well?","Solve the following problem, showing your reasoning.
+
+Let's think step by step.
+
+Input: A snail is at the bottom of a 20-foot well. Every day it climbs up 5 feet, but at night it slips down 4 feet. How many days will it take for the snail to reach the top of the well?","To solve this problem, let's break it down step by step.
+
+1. **Understand the snail's movement pattern:**
+   - The snail climbs 5 feet up during the day.
+   - At night, it slips 4 feet down.
+
+2. **Calculate the net progress per day:**
+   - Net progress = (climbed up) - (slipped down)
+   - Net progress = 5 feet - 4 feet = 1 foot per day
+
+3. **Determine the remaining distance to the top:**
+   - The well is 20 feet deep.
+   - The snail starts at the bottom, so it needs to climb 20 feet to reach the top.
+
+4. **Calculate the number of days required to reach the top:**
+   - Since the snail makes a net progress of 1 foot per day, it will take 20 days to climb 20 feet.
+   - However, on the 20th day, the snail will climb 5 feet and reach the top, so it won't slip down at night.
+
+Therefore, it will take the snail **19 days** to climb 19 feet (18 * 1 foot/day) and reach 1 foot from the top, and then **1 day** to climb the final 5 feet and reach the top.",2026-07-12T21:57:54.523881
+reasoning,chain_of_thought,llama3-8b,1,"If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?","Solve the following problem, showing your reasoning.
+
+Let's think step by step.
+
+Input: If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?","To solve this problem, let's break it down step by step.
+
+**Step 1: Analyze the given information**
+
+- 5 machines can make 5 widgets in 5 minutes.
+
+**Step 2: Determine the rate of production per machine**
+
+- Since 5 machines can make 5 widgets in 5 minutes, we can say that 1 machine can make 1 widget in 5 minutes.
+
+**Step 3: Calculate the total production rate for 100 machines**
+
+- If 1 machine can make 1 widget in 5 minutes, then 100 machines can make 100 widgets in 5 minutes.
+
+**Conclusion**
+
+- It would take 100 machines 5 minutes to make 100 widgets.
+
+This problem is a classic example of a ""constant rate"" problem, where the rate of production remains the same regardless of the number of machines.",2026-07-12T21:57:55.327514
+reasoning,chain_of_thought,llama3-8b,2,"Alice, Bob, and Charlie each have a different favorite fruit: apple, banana, or cherry. Alice does not like apples. Bob's favorite fruit is banana. What is Charlie's favorite fruit?","Solve the following problem, showing your reasoning.
+
+Let's think step by step.
+
+Input: Alice, Bob, and Charlie each have a different favorite fruit: apple, banana, or cherry. Alice does not like apples. Bob's favorite fruit is banana. What is Charlie's favorite fruit?","To solve this problem, let's break it down step by step.
+
+1. We know that Alice does not like apples. This means Alice's favorite fruit is either banana or cherry.
+
+2. We also know that Bob's favorite fruit is banana. Since Bob's favorite fruit is banana, and Alice's favorite fruit is either banana or cherry, this means Alice's favorite fruit cannot be banana. Therefore, Alice's favorite fruit must be cherry.
+
+3. Now we have the following information:
+   - Alice's favorite fruit is cherry.
+   - Bob's favorite fruit is banana.
+
+4. We are given that each person has a different favorite fruit. This means Charlie's favorite fruit must be the only remaining option, which is apple.
+
+Therefore, Charlie's favorite fruit is apple.",2026-07-12T21:57:56.123798
+reasoning,chain_of_thought,llama3-8b,3,"A store sells shirts for $20 each. If you buy 3 shirts, you get a 25% discount on the total price. How much will you pay if you buy 5 shirts, assuming the discount only applies to multiples of 3?","Solve the following problem, showing your reasoning.
+
+Let's think step by step.
+
+Input: A store sells shirts for $20 each. If you buy 3 shirts, you get a 25% discount on the total price. How much will you pay if you buy 5 shirts, assuming the discount only applies to multiples of 3?","To solve this problem, let's break it down into steps.
+
+**Step 1: Calculate the total price of 5 shirts without any discount**
+
+Since each shirt costs $20, the total price of 5 shirts is:
+5 shirts * $20/shirt = $100
+
+**Step 2: Determine if the discount applies**
+
+The discount only applies to multiples of 3 shirts. Since we are buying 5 shirts, which is not a multiple of 3, the discount does not apply to the entire purchase.
+
+**Step 3: Calculate the price of 3 shirts (the multiple of 3)**
+
+Since the discount applies to multiples of 3, let's calculate the price of 3 shirts:
+3 shirts * $20/shirt = $60
+
+**Step 4: Calculate the discount on the 3 shirts**
+
+The discount is 25% of the price of 3 shirts:
+Discount = 25% of $60
+= 0.25 * $60
+= $15
+
+**Step 5: Calculate the price of the 3 shirts after the discount**
+
+Subtract the discount from the price of 3 shirts:
+Price after discount = $60 - $15
+= $45
+
+**Step 6: Calculate the total price of 5 shirts**
+
+Add the price of the 3 shirts after the discount to the price of the remaining 2 shirts:
+Total price = $45 (3 shirts) + $40 (2 shirts)
+= $85
+
+Therefore, if you buy 5 shirts, assuming the discount only applies to multiples of 3, you will pay $85.",2026-07-12T21:57:59.246141
+reasoning,chain_of_thought,llama3-8b,4,"In a certain town, 60% of the people own a dog, 40% own a cat, and 20% own both a dog and a cat. What percentage of the people own neither a dog nor a cat?","Solve the following problem, showing your reasoning.
+
+Let's think step by step.
+
+Input: In a certain town, 60% of the people own a dog, 40% own a cat, and 20% own both a dog and a cat. What percentage of the people own neither a dog nor a cat?","To find the percentage of people who own neither a dog nor a cat, we need to use the principle of inclusion-exclusion.
+
+Let's break down the information given:
+
+- 60% of the people own a dog (D)
+- 40% of the people own a cat (C)
+- 20% of the people own both a dog and a cat (D ∩ C)
+
+We can use the formula for the principle of inclusion-exclusion to find the total percentage of people who own a dog or a cat:
+
+Total percentage of people who own a dog or a cat = (percentage of people who own a dog) + (percentage of people who own a cat) - (percentage of people who own both a dog and a cat)
+= 60% + 40% - 20%
+= 80%
+
+Now, to find the percentage of people who own neither a dog nor a cat, we subtract the total percentage of people who own a dog or a cat from 100%:
+
+Percentage of people who own neither a dog nor a cat = 100% - 80%
+= 20%
+
+Therefore, 20% of the people in the town own neither a dog nor a cat.",2026-07-12T21:58:00.099385
+reasoning,chain_of_thought,llama3-70b,0,"A snail is at the bottom of a 20-foot well. Every day it climbs up 5 feet, but at night it slips down 4 feet. How many days will it take for the snail to reach the top of the well?","Solve the following problem, showing your reasoning.
+
+Let's think step by step.
+
+Input: A snail is at the bottom of a 20-foot well. Every day it climbs up 5 feet, but at night it slips down 4 feet. How many days will it take for the snail to reach the top of the well?","To solve this problem, let's break it down step by step.
+
+1. **Understand the snail's movement pattern**: The snail climbs 5 feet up during the day and slips 4 feet down at night. This means the net progress the snail makes each day is 5 feet (up) - 4 feet (down) = 1 foot.
+
+2. **Calculate progress until the last day**: Since the well is 20 feet deep, we need to figure out how many days it will take for the snail to climb to a point where it can reach the top on its final climb.
+
+3. **Determine the final climb day**: On the day the snail reaches or surpasses the 20-foot mark, it won't slip back at night because it will have already reached the top. 
+
+4. **Calculate the number of days needed to reach near the top**: If we subtract the distance the snail climbs in one day (5 feet) from the total depth of the well (20 feet), we get 20 - 5 = 15 feet. This is because on the last day of climbing, the snail will climb 5 feet and reach the top without slipping back.
+
+5. **Calculate the days needed to climb 15 feet with a net gain of 1 foot per day**: Since the snail makes a net progress of 1 foot per day, to cover 15 feet, it will take 15 days.
+
+6. **Add the final day's climb**: After 15 days, the snail will be at the 15-foot mark (since it started from the bottom and made a net progress of 1 foot per day for 15 days). On the 16th day, when it climbs 5 feet, it will reach the top of the 20-foot well and won't slip back.
+
+Therefore, it will take the snail **16 days** to reach the top of the well.",2026-07-12T21:58:02.782993
+reasoning,chain_of_thought,llama3-70b,1,"If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?","Solve the following problem, showing your reasoning.
+
+Let's think step by step.
+
+Input: If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?","To solve this problem, let's break it down step by step.
+
+1. **Understand the given situation**: It takes 5 machines 5 minutes to make 5 widgets. This means that each machine is making 1 widget in 5 minutes.
+
+2. **Determine the rate of production per machine**: Since each machine makes 1 widget in 5 minutes, the rate of production per machine is 1 widget / 5 minutes.
+
+3. **Apply this rate to the new situation**: We now have 100 machines and want to know how long it takes for them to make 100 widgets. Since each machine can make 1 widget in 5 minutes, 100 machines can make 100 widgets in the same amount of time it takes one machine to make 1 widget, because the production is linear and each machine works independently.
+
+4. **Conclusion**: Given that each machine makes 1 widget in 5 minutes, it would take 100 machines 5 minutes to make 100 widgets, as the increase in the number of machines directly scales with the increase in the number of widgets to be made, without changing the time required.
+
+Therefore, it would take 100 machines 5 minutes to make 100 widgets.",2026-07-12T21:58:04.174010
+reasoning,chain_of_thought,llama3-70b,2,"Alice, Bob, and Charlie each have a different favorite fruit: apple, banana, or cherry. Alice does not like apples. Bob's favorite fruit is banana. What is Charlie's favorite fruit?","Solve the following problem, showing your reasoning.
+
+Let's think step by step.
+
+Input: Alice, Bob, and Charlie each have a different favorite fruit: apple, banana, or cherry. Alice does not like apples. Bob's favorite fruit is banana. What is Charlie's favorite fruit?","To solve this problem, let's break down the information given:
+
+1. Alice, Bob, and Charlie each have a different favorite fruit: apple, banana, or cherry.
+2. Alice does not like apples.
+3. Bob's favorite fruit is banana.
+
+From point 2, we know Alice's favorite fruit can either be banana or cherry, but since Bob's favorite fruit is banana (point 3), Alice's favorite fruit must be cherry because each person has a different favorite fruit.
+
+Now, we have:
+- Bob's favorite fruit: banana
+- Alice's favorite fruit: cherry
+
+The only fruit left is apple, and since each person has a different favorite fruit, Charlie's favorite fruit must be apple.
+
+Therefore, Charlie's favorite fruit is apple.",2026-07-12T21:58:05.374984
+reasoning,chain_of_thought,llama3-70b,3,"A store sells shirts for $20 each. If you buy 3 shirts, you get a 25% discount on the total price. How much will you pay if you buy 5 shirts, assuming the discount only applies to multiples of 3?","Solve the following problem, showing your reasoning.
+
+Let's think step by step.
+
+Input: A store sells shirts for $20 each. If you buy 3 shirts, you get a 25% discount on the total price. How much will you pay if you buy 5 shirts, assuming the discount only applies to multiples of 3?","To solve this problem, let's break it down step by step.
+
+1. **Calculate the total price without any discount**: 
+   - The price of one shirt is $20.
+   - You are buying 5 shirts.
+   - Total price without discount = Price per shirt * Number of shirts
+   - Total price without discount = $20 * 5 = $100
+
+2. **Determine how many sets of 3 shirts you can buy to apply the discount**:
+   - Since the discount applies to multiples of 3 shirts, we need to find out how many complete sets of 3 shirts are included in the 5 shirts you're buying.
+   - You can buy 1 set of 3 shirts (since 3 * 1 = 3, and you have 5 shirts, which is more than 3).
+   - After buying 1 set of 3 shirts, you have 5 - 3 = 2 shirts left.
+
+3. **Calculate the price for the set of 3 shirts with the discount**:
+   - Original price for 3 shirts = $20 * 3 = $60
+   - Discount = 25% of $60 = 0.25 * $60 = $15
+   - Price for 3 shirts with discount = Original price - Discount = $60 - $15 = $45
+
+4. **Calculate the price for the remaining shirts**:
+   - You have 2 shirts left.
+   - Price for the remaining 2 shirts = $20 * 2 = $40
+
+5. **Calculate the total price you will pay**:
+   - Total price = Price for the set of 3 shirts with discount + Price for the remaining shirts
+   - Total price = $45 + $40 = $85
+
+Therefore, if you buy 5 shirts, you will pay $85.",2026-07-12T21:58:07.710710
+reasoning,chain_of_thought,llama3-70b,4,"In a certain town, 60% of the people own a dog, 40% own a cat, and 20% own both a dog and a cat. What percentage of the people own neither a dog nor a cat?","Solve the following problem, showing your reasoning.
+
+Let's think step by step.
+
+Input: In a certain town, 60% of the people own a dog, 40% own a cat, and 20% own both a dog and a cat. What percentage of the people own neither a dog nor a cat?","To find the percentage of people who own neither a dog nor a cat, we can use the principle of inclusion-exclusion. This principle helps us account for the overlap between the groups of dog owners and cat owners.
+
+1. **Calculate the percentage of people who own a dog or a cat (including those who own both):**
+   - Percentage of people who own a dog: 60%
+   - Percentage of people who own a cat: 40%
+   - If we simply add these percentages, we would be counting the people who own both a dog and a cat twice. So, we need to subtract the percentage of people who own both to avoid double-counting.
+
+2. **Apply the principle of inclusion-exclusion:**
+   - Percentage of people who own a dog or a cat = Percentage of people who own a dog + Percentage of people who own a cat - Percentage of people who own both
+   - Percentage of people who own a dog or a cat = 60% + 40% - 20%
+   - Percentage of people who own a dog or a cat = 100% - 20%
+   - Percentage of people who own a dog or a cat = 80%
+
+3. **Calculate the percentage of people who own neither a dog nor a cat:**
+   - Since 80% of the people own either a dog, a cat, or both, the percentage of people who own neither can be found by subtracting this percentage from 100%.
+   - Percentage of people who own neither a dog nor a cat = 100% - 80%
+   - Percentage of people who own neither a dog nor a cat = 20%
+
+Therefore, 20% of the people in the town own neither a dog nor a cat.",2026-07-12T21:58:09.279272
+reasoning,role_based,llama3-8b,0,"A snail is at the bottom of a 20-foot well. Every day it climbs up 5 feet, but at night it slips down 4 feet. How many days will it take for the snail to reach the top of the well?","You are a brilliant mathematician and logician capable of solving complex multi-step reasoning problems flawlessly.
+
+Solve the following problem, showing your reasoning.
+
+Input: A snail is at the bottom of a 20-foot well. Every day it climbs up 5 feet, but at night it slips down 4 feet. How many days will it take for the snail to reach the top of the well?","To solve this problem, we need to consider the snail's daily progress and how it affects its overall position in the well.
+
+On the first day, the snail climbs 5 feet, so it reaches a height of 5 feet. At night, it slips down 4 feet, so it ends up at a height of 1 foot.
+
+On the second day, the snail climbs 5 feet from the 1-foot mark, reaching a height of 6 feet. At night, it slips down 4 feet, so it ends up at a height of 2 feet.
+
+Notice a pattern: on the nth day, the snail climbs 5 feet and reaches a height of 5n feet. However, at night, it slips down 4 feet, so it ends up at a height of 5n - 4 feet.
+
+We want to find the number of days it takes for the snail to reach the top of the 20-foot well. Let's set up an equation to represent this situation:
+
+5n - 4 = 20
+
+To solve for n, we can add 4 to both sides of the equation:
+
+5n = 24
+
+Next, we can divide both sides of the equation by 5:
+
+n = 24 / 5
+
+n = 4.8
+
+However, we can't have a fraction of a day, so we need to round up to the nearest whole number. This is because the snail will still be climbing on the last day, and it will reach the top of the well on the next day.
+
+Therefore, it will take the snail 5 days to reach the top of the 20-foot well.
+
+To verify this answer, let's calculate the snail's position on the 5th day:
+
+On the 5th day, the snail climbs 5 feet from the 16-foot mark (4 * 5 - 4 = 16), reaching a height of 21 feet. At night, it slips down 4 feet, so it ends up at a height of 17 feet. However, since the well is only 20 feet deep, the snail will actually reach the top of the well on the 5th day, without slipping down.
+
+This confirms our initial answer: it will take the snail 5 days to reach the top of the 20-foot well.",2026-07-12T21:58:10.731942
+reasoning,role_based,llama3-8b,1,"If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?","You are a brilliant mathematician and logician capable of solving complex multi-step reasoning problems flawlessly.
+
+Solve the following problem, showing your reasoning.
+
+Input: If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?","This problem appears to be a classic example of a lateral thinking puzzle. At first glance, it seems like a straightforward problem of scaling up the number of machines and widgets. However, the key to solving this problem lies in understanding the relationship between the number of machines, the time taken, and the number of widgets produced.
+
+Let's break down the given information:
+
+- 5 machines take 5 minutes to make 5 widgets.
+
+This implies that each machine takes 5 minutes to make 1 widget. Since there are 5 machines, the total time taken to make 5 widgets is still 5 minutes.
+
+Now, let's consider the situation with 100 machines:
+
+- If each machine takes 5 minutes to make 1 widget, then 100 machines will also take 5 minutes to make 100 widgets.
+
+The reasoning behind this is that the time taken to make a single widget is independent of the number of machines. As long as each machine is working at the same rate, the total time taken to produce a certain number of widgets will remain the same.
+
+Therefore, it would take 100 machines 5 minutes to make 100 widgets.",2026-07-12T21:58:12.751926
+reasoning,role_based,llama3-8b,2,"Alice, Bob, and Charlie each have a different favorite fruit: apple, banana, or cherry. Alice does not like apples. Bob's favorite fruit is banana. What is Charlie's favorite fruit?","You are a brilliant mathematician and logician capable of solving complex multi-step reasoning problems flawlessly.
+
+Solve the following problem, showing your reasoning.
+
+Input: Alice, Bob, and Charlie each have a different favorite fruit: apple, banana, or cherry. Alice does not like apples. Bob's favorite fruit is banana. What is Charlie's favorite fruit?","To solve this problem, we can use a process of elimination and logical deduction.
+
+Given information:
+
+1. Alice does not like apples.
+2. Bob's favorite fruit is banana.
+
+Since Alice does not like apples, and there are only three options (apple, banana, and cherry), we can conclude that Alice's favorite fruit must be either banana or cherry.
+
+However, we also know that Bob's favorite fruit is banana. This means that Alice cannot have banana as her favorite fruit, because Bob already has it. Therefore, Alice's favorite fruit must be cherry.
+
+Now, we have the following information:
+
+1. Alice's favorite fruit is cherry.
+2. Bob's favorite fruit is banana.
+
+Since Charlie's favorite fruit must be different from both Alice's and Bob's, and there are only three options (apple, banana, and cherry), we can conclude that Charlie's favorite fruit must be the only remaining option: apple.
+
+Therefore, Charlie's favorite fruit is apple.",2026-07-12T21:58:13.647256
+reasoning,role_based,llama3-8b,3,"A store sells shirts for $20 each. If you buy 3 shirts, you get a 25% discount on the total price. How much will you pay if you buy 5 shirts, assuming the discount only applies to multiples of 3?","You are a brilliant mathematician and logician capable of solving complex multi-step reasoning problems flawlessly.
+
+Solve the following problem, showing your reasoning.
+
+Input: A store sells shirts for $20 each. If you buy 3 shirts, you get a 25% discount on the total price. How much will you pay if you buy 5 shirts, assuming the discount only applies to multiples of 3?","To solve this problem, we need to break it down into steps.
+
+Step 1: Calculate the total price of 5 shirts without any discount.
+Since each shirt costs $20, the total price of 5 shirts is:
+5 shirts * $20/shirt = $100
+
+Step 2: Determine the number of sets of 3 shirts in 5 shirts.
+Since the discount only applies to multiples of 3, we need to find out how many sets of 3 shirts are in 5 shirts.
+5 shirts / 3 shirts/set = 1 set with 2 shirts remaining.
+
+Step 3: Calculate the total price of the sets of 3 shirts.
+Since each set of 3 shirts gets a 25% discount, we need to calculate the price of one set of 3 shirts first.
+The original price of 3 shirts is:
+3 shirts * $20/shirt = $60
+The discount on 3 shirts is 25% of $60:
+$60 * 0.25 = $15
+The discounted price of 3 shirts is:
+$60 - $15 = $45
+Since we have 1 set of 3 shirts, the total price of the sets of 3 shirts is:
+1 set * $45/set = $45
+
+Step 4: Calculate the total price of the remaining shirts.
+Since there are 2 shirts remaining, we need to calculate their price without any discount:
+2 shirts * $20/shirt = $40
+
+Step 5: Calculate the total price of 5 shirts with the discount.
+The total price of the sets of 3 shirts is $45, and the total price of the remaining shirts is $40.
+Therefore, the total price of 5 shirts with the discount is:
+$45 + $40 = $85
+
+So, if you buy 5 shirts, assuming the discount only applies to multiples of 3, you will pay $85.",2026-07-12T21:58:14.704061
+reasoning,role_based,llama3-8b,4,"In a certain town, 60% of the people own a dog, 40% own a cat, and 20% own both a dog and a cat. What percentage of the people own neither a dog nor a cat?","You are a brilliant mathematician and logician capable of solving complex multi-step reasoning problems flawlessly.
+
+Solve the following problem, showing your reasoning.
+
+Input: In a certain town, 60% of the people own a dog, 40% own a cat, and 20% own both a dog and a cat. What percentage of the people own neither a dog nor a cat?","To solve this problem, we can use the principle of inclusion-exclusion from set theory. 
+
+Let's denote the set of people who own a dog as D, the set of people who own a cat as C, and the set of people who own both a dog and a cat as B (the intersection of D and C).
+
+We are given the following information:
+
+- 60% of the people own a dog (|D| = 0.6)
+- 40% of the people own a cat (|C| = 0.4)
+- 20% of the people own both a dog and a cat (|B| = 0.2)
+
+We want to find the percentage of people who own neither a dog nor a cat, which is equivalent to finding the complement of the union of D and C, denoted as |D ∪ C|'.
+
+Using the principle of inclusion-exclusion, we can calculate the size of the union of D and C as follows:
+
+|D ∪ C| = |D| + |C| - |B|
+
+Substituting the given values, we get:
+
+|D ∪ C| = 0.6 + 0.4 - 0.2
+|D ∪ C| = 0.8
+
+This represents the percentage of people who own either a dog or a cat (or both).
+
+To find the percentage of people who own neither a dog nor a cat, we subtract the size of the union of D and C from 1 (since the union of D and C represents all possible outcomes):
+
+|D ∪ C|' = 1 - |D ∪ C|
+|D ∪ C|' = 1 - 0.8
+|D ∪ C|' = 0.2
+
+Therefore, 20% of the people own neither a dog nor a cat.",2026-07-12T21:58:24.944292
+reasoning,role_based,llama3-70b,0,"A snail is at the bottom of a 20-foot well. Every day it climbs up 5 feet, but at night it slips down 4 feet. How many days will it take for the snail to reach the top of the well?","You are a brilliant mathematician and logician capable of solving complex multi-step reasoning problems flawlessly.
+
+Solve the following problem, showing your reasoning.
+
+Input: A snail is at the bottom of a 20-foot well. Every day it climbs up 5 feet, but at night it slips down 4 feet. How many days will it take for the snail to reach the top of the well?","To solve this problem, let's break it down step by step.
+
+1. The snail climbs 5 feet during the day and slips back 4 feet at night, so the net progress it makes each day is 5 - 4 = 1 foot.
+
+2. Since the well is 20 feet deep, if we only consider the net progress, it would seem like it takes 20 days to reach the top (20 feet / 1 foot per day). However, this calculation doesn't take into account the fact that on the final day of climbing, the snail won't slip back at night because it will have already reached the top.
+
+3. Let's consider the last day the snail climbs. For the snail to reach the top, it needs to climb to or beyond the 20-foot mark during the day. Since it climbs 5 feet each day, it needs to start the day at or below the 15-foot mark to reach or exceed the 20-foot mark during its climb.
+
+4. If we subtract the 5 feet the snail climbs on its final day from the 20-foot depth of the well, we find that the snail needs to be at the 15-foot mark at the start of its final day of climbing. 
+
+5. Given that the snail makes a net progress of 1 foot per day, to reach the 15-foot mark, it would take 15 days (since 15 feet / 1 foot per day = 15 days).
+
+6. However, the question asks for the number of days it takes for the snail to reach the top, not to reach the 15-foot mark. Since the snail reaches the 15-foot mark in 15 days and then climbs to the top on the 16th day, it takes a total of 16 days for the snail to reach the top of the well.
+
+Therefore, it will take the snail 16 days to reach the top of the 20-foot well.",2026-07-12T21:58:26.891035
+reasoning,role_based,llama3-70b,1,"If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?","You are a brilliant mathematician and logician capable of solving complex multi-step reasoning problems flawlessly.
+
+Solve the following problem, showing your reasoning.
+
+Input: If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?","To solve this problem, let's break it down step by step.
+
+1. **Understand the given scenario**: It takes 5 machines 5 minutes to make 5 widgets. This means that each machine is producing 1 widget in 5 minutes.
+
+2. **Determine the production rate per machine**: Since each machine makes 1 widget in 5 minutes, the production rate per machine is 1 widget / 5 minutes.
+
+3. **Apply the production rate to the new scenario**: We now have 100 machines, and we want to know how long it takes for them to make 100 widgets. Given that each machine can make 1 widget in 5 minutes, 100 machines can make 100 widgets in the same amount of time it takes one machine to make 1 widget, because the production is linear and scalable.
+
+4. **Calculate the time required for 100 machines to make 100 widgets**: Since one machine takes 5 minutes to make one widget, 100 machines will also take 5 minutes to make 100 widgets, as each of the 100 machines is working on one widget.
+
+Therefore, it would take 100 machines 5 minutes to make 100 widgets, because the ratio of machines to widgets remains constant, and the production time per widget does not change with the number of machines.",2026-07-12T21:58:28.578494
+reasoning,role_based,llama3-70b,2,"Alice, Bob, and Charlie each have a different favorite fruit: apple, banana, or cherry. Alice does not like apples. Bob's favorite fruit is banana. What is Charlie's favorite fruit?","You are a brilliant mathematician and logician capable of solving complex multi-step reasoning problems flawlessly.
+
+Solve the following problem, showing your reasoning.
+
+Input: Alice, Bob, and Charlie each have a different favorite fruit: apple, banana, or cherry. Alice does not like apples. Bob's favorite fruit is banana. What is Charlie's favorite fruit?","To solve this problem, let's break down the information given:
+
+1. Alice, Bob, and Charlie each have a different favorite fruit: apple, banana, or cherry.
+2. Alice does not like apples.
+3. Bob's favorite fruit is banana.
+
+From point 3, we know Bob's favorite fruit is banana. This means that Alice and Charlie cannot have banana as their favorite fruit, since each person has a different favorite fruit (point 1).
+
+From point 2, we know Alice does not like apples. Since Alice cannot have banana (because Bob has banana), and she doesn't like apples, Alice must have cherry as her favorite fruit.
+
+Now, let's summarize what we have so far:
+- Bob's favorite fruit is banana.
+- Alice's favorite fruit is cherry.
+
+The only fruit left is apple, and the only person left is Charlie. Since each person has a different favorite fruit, Charlie must have apple as his favorite fruit.
+
+Therefore, Charlie's favorite fruit is apple.",2026-07-12T21:58:29.955610
+reasoning,role_based,llama3-70b,3,"A store sells shirts for $20 each. If you buy 3 shirts, you get a 25% discount on the total price. How much will you pay if you buy 5 shirts, assuming the discount only applies to multiples of 3?","You are a brilliant mathematician and logician capable of solving complex multi-step reasoning problems flawlessly.
+
+Solve the following problem, showing your reasoning.
+
+Input: A store sells shirts for $20 each. If you buy 3 shirts, you get a 25% discount on the total price. How much will you pay if you buy 5 shirts, assuming the discount only applies to multiples of 3?","To solve this problem, let's break it down into steps.
+
+1. **Calculate the cost without any discount**: The cost of one shirt is $20. Therefore, the cost of 5 shirts without any discount is 5 * $20 = $100.
+
+2. **Determine how many sets of 3 shirts can be bought to apply the discount**: Since the discount applies to multiples of 3 shirts, and we are buying 5 shirts, we can buy one set of 3 shirts to get the discount. The remaining shirts will be bought at the full price.
+
+3. **Calculate the cost of the set of 3 shirts with the discount**: The total price for 3 shirts without discount is 3 * $20 = $60. With a 25% discount, the discount amount is 25% of $60, which is 0.25 * $60 = $15. Therefore, the cost of 3 shirts with the discount is $60 - $15 = $45.
+
+4. **Calculate the cost of the remaining shirts**: After buying one set of 3 shirts, we have 5 - 3 = 2 shirts left to buy at the full price. The cost of these 2 shirts is 2 * $20 = $40.
+
+5. **Calculate the total cost**: The total cost is the sum of the cost of the set of 3 shirts with the discount and the cost of the remaining 2 shirts. Therefore, the total cost is $45 + $40 = $85.
+
+So, if you buy 5 shirts, you will pay $85, considering the discount only applies to multiples of 3 shirts.",2026-07-12T21:58:31.487761
+reasoning,role_based,llama3-70b,4,"In a certain town, 60% of the people own a dog, 40% own a cat, and 20% own both a dog and a cat. What percentage of the people own neither a dog nor a cat?","You are a brilliant mathematician and logician capable of solving complex multi-step reasoning problems flawlessly.
+
+Solve the following problem, showing your reasoning.
+
+Input: In a certain town, 60% of the people own a dog, 40% own a cat, and 20% own both a dog and a cat. What percentage of the people own neither a dog nor a cat?","To solve this problem, we can use the principle of inclusion-exclusion, which allows us to calculate the total percentage of people who own either a dog or a cat, and then subtract that from 100% to find the percentage of people who own neither.
+
+Let's break it down step by step:
+
+1. 60% of the people own a dog (D).
+2. 40% of the people own a cat (C).
+3. 20% of the people own both a dog and a cat (D ∩ C), which means they are counted twice in the individual percentages for dogs and cats.
+
+To find the total percentage of people who own either a dog or a cat, we add the percentages for dogs and cats, and then subtract the percentage of people who own both, to avoid double-counting:
+
+D ∪ C = D + C - (D ∩ C)
+= 60% + 40% - 20%
+= 80%
+
+This means that 80% of the people in the town own either a dog or a cat.
+
+To find the percentage of people who own neither a dog nor a cat, we subtract the percentage of people who own either a dog or a cat from 100%:
+
+Neither D nor C = 100% - (D ∪ C)
+= 100% - 80%
+= 20%
+
+Therefore, 20% of the people in the town own neither a dog nor a cat.",2026-07-12T21:58:32.799389

@@ -1,0 +1,4 @@
+task_category,mean,std,count
+classification,5.0,0.0,40
+reasoning,4.8149999999999995,0.736432843736164,40
+summarization,4.575,1.0240067107151902,40

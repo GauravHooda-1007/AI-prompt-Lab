@@ -1,0 +1,4 @@
+task_category,best_model,best_strategy,mean_score
+classification,llama3-70b,chain_of_thought,5.0
+summarization,llama3-70b,role_based,5.0
+reasoning,llama3-70b,chain_of_thought,5.0
